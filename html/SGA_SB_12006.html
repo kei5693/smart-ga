@@ -1,0 +1,219 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>사용 통계(SGA_SB_12006)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<!-- skip -->
+<!-- <div id="skip">
+    <a href="#content">본문 바로가기</a>
+    <a href="#bottom_navmn">메뉴 바로가기</a>
+</div> -->
+
+<div id="wrap">
+		
+	<header class="header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title">사용 통계</h1>
+    </header>
+
+	<section class="content">
+		<div class="conts_page pg_more_stats">
+            <h2 class="blind">New SmartGA 사용 통계</h2>
+
+            <div class="filter">
+                <ul class="radio_list">
+                    <li>
+                        <div class="radio bgcolor check"> <!-- 210209_ui변경_(.bgcolor 클래스 추가) -->
+                            <input type="radio" id="rad01" name="n_radio" checked>
+                            <label for="rad01">전체</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor">
+                            <input type="radio" id="rad02" name="n_radio">
+                            <label for="rad02">이번 달</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor">
+                            <input type="radio" id="rad03" name="n_radio">
+                            <label for="rad03">6개월</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor">
+                            <input type="radio" id="rad04" name="n_radio">
+                            <label for="rad04">1년</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="box box_use_stats">
+                <div class="use_total">
+                    <div class="total">
+                        <h2 class="spo_tit4">SMS 발송 이력</h2>
+                        <strong class="number">
+                            320
+                            <span class="unit">건</span>
+                        </strong>
+                    </div>
+                    <div class="row">
+                        <div class="fl">
+                            <span class="tt">확인서</span>
+                            <strong class="number">
+                                0
+                                <span class="unit">건</span>
+                            </strong>
+                        </div>
+                        <div class="fl">
+                            <span class="tt">다이렉트 광고</span>
+                            <strong class="number">
+                            0
+                            <span class="unit">건</span>
+                        </strong>
+                        </div>
+                    </div>
+                    <div class="row tline">
+                        <div class="fl">
+                            <span class="tt">보장분석</span>
+                            <strong class="number">
+                            0
+                            <span class="unit">건</span>
+                        </strong>
+                        </div>
+                        <div class="fl">
+                            <span class="tt">비교견적</span>
+                            <strong class="number">
+                            0
+                            <span class="unit">건</span>
+                        </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 고객 관리 list -->
+            <div class="csmge_list mt40">
+                <ul>
+                    <!-- loop -->
+                    <li>
+                        <div class="csmge_sumup">
+                            <strong class="title">상품비교확인서</strong>
+                            <div class="left">
+                                <strong class="eps">정예린정예린정예린정예린정예린정예린정예린</strong>
+                                <span class="stats suc">계약</span> <!-- 계약( .suc ), 가망( .chance ) 클래스 추가  -->
+                            </div>
+                            <div class="right">
+                                <p>
+                                    <span class="blind">전화번호</span>
+                                    <span class="ls0">010-1234-5678</span>
+                                </p>
+                                <p>
+                                    <span class="blind">날짜</span>
+                                    <span class="ls0">2020-11-11 18:34:22</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- //loop -->
+                    <li>
+                        <div class="csmge_sumup">
+                            <strong class="title">다이렉트 광고</strong>
+                            <div class="left">
+                                <strong class="eps">정예린</strong>
+                                <span class="stats chance">가망</span> <!-- 계약( .suc ), 가망( .chance ) 클래스 추가  -->
+                            </div>
+                            <div class="right">
+                                <p>
+                                    <span class="blind">전화번호</span>
+                                    <span class="ls0">010-1234-5678</span>
+                                </p>
+                                <p>
+                                    <span class="blind">날짜</span>
+                                    <span class="ls0">2020-11-11 18:34:22</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="csmge_sumup">
+                            <strong class="title">보장분석</strong>
+                            <div class="left">
+                                <strong class="eps">최아린</strong>
+                            </div>
+                            <div class="right">
+                                <p>
+                                    <span class="blind">전화번호</span>
+                                    <span class="ls0">010-1234-5678</span>
+                                </p>
+                                <p>
+                                    <span class="blind">날짜</span>
+                                    <span class="ls0">2020-11-11 18:34:22</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="csmge_sumup">
+                            <strong class="title">문자 발송 서비스 명</strong>
+                            <div class="left">
+                                <strong class="eps">최아린</strong>
+                                <span class="stats chance">가망</span> <!-- 계약( .suc ), 가망( .chance ) 클래스 추가  -->
+                            </div>
+                            <div class="right">
+                                <p>
+                                    <span class="blind">전화번호</span>
+                                    <span class="ls0">010-1234-5678</span>
+                                </p>
+                                <p>
+                                    <span class="blind">날짜</span>
+                                    <span class="ls0">2020-11-11 18:34:22</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+		</div>
+	</section>
+
+	<!-- bottom fix menu -->
+	<!-- 210111_삭제 <nav class="bottom_navmn">
+		<div class="conts">
+			<a href="#" class="nv_home"><span class="blind">홈</span></a>
+			<a href="#" class="nv_cal"><span class="blind">일정관리</span></a>
+			<a href="#" class="nv_cs"><span class="blind">고객관리</span></a>
+			<a href="#" class="nv_more on"><span class="blind">더 보기</span></a>
+		</div>
+	</nav> -->
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+ 
+</body>
+</html>

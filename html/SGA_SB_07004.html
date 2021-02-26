@@ -1,0 +1,687 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>확인서생성_보험사선택(SGA_SB_07004)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<!-- skip -->
+<!-- <div id="skip">
+    <a href="#content">본문 바로가기</a>
+    <a href="#bottom_navmn">메뉴 바로가기</a>
+</div> -->
+
+<div id="wrap" class="wrap_smart"> <!-- 210122_ui변경_스마트확인서일 경우 .wrap_smart 클래스 추가  -->
+		
+	<!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">스마트 확인서</span></h1>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+		<div class="conts_page pg_sm_create_1">
+            
+            <!-- 최근 판매하신 상품 -->
+            <div class="soon_sals">
+                <h2 class="tit3"><strong>최근 판매하신 상품</strong></h2>
+
+                <div class="box">
+                    <div class="swiper-container soon-swiper">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide">
+                                <span class="tag cate1">장기</span>
+                                <p class="logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></p>
+                                <strong class="spo_tit3 eps2">무배당 스타플러스 간편한 달러평생보장보험 무배당 스타플러스 간편한 달러평생보장보험  무배당 스타플러스 간편한 달러평생보장보험</strong>
+                                <span class="txt16">확인서 생성 &gt;</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <span class="tag cate2">자동차</span>
+                                <p class="logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></p>
+                                <strong class="spo_tit3 eps2">무배당 스타플러스 간편한 달러평생보장보험</strong>
+                                <span class="txt16">확인서 생성 &gt;</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <span class="tag cate3">일반</span>
+                                <p class="logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></p>
+                                <strong class="spo_tit3 eps2">무배당 스타플러스 간편한 달러평생보장보험</strong>
+                                <span class="txt16">확인서 생성 &gt;</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <span class="tag cate1">장기</span>
+                                <p class="logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></p>
+                                <strong class="spo_tit3 eps2">무배당 스타플러스 간편한 달러평생보장보험</strong>
+                                <span class="txt16">확인서 생성 &gt;</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <span class="tag cate2">자동차</span>
+                                <p class="logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></p>
+                                <strong class="spo_tit3 eps2">무배당 스타플러스 간편한 달러평생보장보험</strong>
+                                <span class="txt16">확인서 생성 &gt;</span>
+                            </a>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 청약 상품 선택하기 -->
+            <h2 class="spo_tit2">청약 상품 선택하기</h2>
+            
+            <div class="radio_tab">
+                <ul class="radio_list">
+                    <li>
+                        <div class="radio bgcolor"> <!-- 210209_ui변경_(.bgcolor 클래스 추가) -->
+                            <input type="radio" id="lg_rad01" name="n_lg_radio">
+                            <label for="lg_rad01">생명보험</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor">
+                            <input type="radio" id="lg_rad02" name="n_lg_radio">
+                            <label for="lg_rad02">손해보험</label>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="panels">
+                    <!-- 생명보험 -->
+                    <div id="tabCon01" aria-labelledby="생명보험" role="tabpanel" class="panel">
+                        <ul class="radio_insur_list life">
+                            <!-- 210118 수정 (로고이미지 img 태그로 수정) -->
+                            <li class="item_1">
+                                <div class="radio bgcolor"> <!-- 210122_ui변경_(.bgcolor 클래스 추가) -->
+                                    <input type="radio" id="rad_life_1" name="n_life">
+                                    <label for="rad_life_1">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_9_s.png" alt="KB생명보험">
+                                        </span>
+                                        KB생명보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_2">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_2" name="n_life">
+                                    <label for="rad_life_2">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_10_s.png" alt="NH농협생명">
+                                        </span>
+                                        NH농협생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_3">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_3" name="n_life">
+                                    <label for="rad_life_3">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/img_insurance_etc_1_s.png" alt="MG 새마을금고">
+                                        </span>
+                                        MG 새마을금고
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_4">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_4" name="n_life">
+                                    <label for="rad_life_4">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_23_s.png" alt="하나생명">
+                                        </span>
+                                        하나생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_5">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_5" name="n_life">
+                                    <label for="rad_life_5">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_4_s.png" alt="카디프생명">
+                                        </span>
+                                        카디프생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_6">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_6" name="n_life">
+                                    <label for="rad_life_6">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_6_s.png" alt="DB생명">
+                                        </span>
+                                        DB생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_7">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_7" name="n_life">
+                                    <label for="rad_life_7">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_24_s.png" alt="한화생명">
+                                        </span>
+                                        한화생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_8">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_8" name="n_life">
+                                    <label for="rad_life_8">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_25_s.png" alt="흥국생명">
+                                        </span>
+                                        흥국생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_9">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_9" name="n_life">
+                                    <label for="rad_life_9">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_18_s.png" alt="삼성생명">
+                                        </span>
+                                        삼성생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_10">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_10" name="n_life">
+                                    <label for="rad_life_10">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_3_s.png" alt="AIA생명">
+                                        </span>
+                                        AIA생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_11">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_11" name="n_life">
+                                    <label for="rad_life_11">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_13_s.png" alt="교보생명">
+                                        </span>
+                                        교보생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_12">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_12" name="n_life">
+                                    <label for="rad_life_12">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_17_s.png" alt="미래에셋생명">
+                                        </span>
+                                        미래에셋생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_13">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_13" name="n_life">
+                                    <label for="rad_life_13">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_19_s.png" alt="신한생명">
+                                        </span>
+                                        신한생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_14">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_14" name="n_life">
+                                    <label for="rad_life_14">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_21_s.png" alt="푸르덴셜생명">
+                                        </span>
+                                        푸르덴셜생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_15">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_15" name="n_life">
+                                    <label for="rad_life_15">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_2_s.png" alt="ABL생명">
+                                        </span>
+                                        ABL생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_16">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_16" name="n_life">
+                                    <label for="rad_life_16">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_12_s.png" alt="라이프플래닛">
+                                        </span>
+                                        라이프플래닛
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_17">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_17" name="n_life">
+                                    <label for="rad_life_17">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_22_s.png" alt="푸본현대생명">
+                                        </span>
+                                        푸본현대생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_18">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_18" name="n_life">
+                                    <label for="rad_life_18">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_1_s.png" alt="KDB생명">
+                                        </span>
+                                        KDB생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_19">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_19" name="n_life">
+                                    <label for="rad_life_19">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_7_s.png" alt="DGB생명">
+                                        </span>
+                                        DGB생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_20">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_20" name="n_life">
+                                    <label for="rad_life_20">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_15_s.png" alt="라이나생명">
+                                        </span>
+                                        라이나생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_21">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_21" name="n_life">
+                                    <label for="rad_life_21">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_20_s.png" alt="오렌지라이프">
+                                        </span>
+                                        오렌지라이프
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_22">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_22" name="n_life">
+                                    <label for="rad_life_22">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_5_s.png" alt="처브라이프">
+                                        </span>
+                                        처브라이프
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_23">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_23" name="n_life">
+                                    <label for="rad_life_23">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_16_s.png" alt="메트라이프">
+                                        </span>
+                                        메트라이프
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_24">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_24" name="n_life">
+                                    <label for="rad_life_24">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_14_s.png" alt="동양생명">
+                                        </span>
+                                        동양생명
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_25">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_25" name="n_life">
+                                    <label for="rad_life_25">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_8_s.png" alt="IBK 연금보험">
+                                        </span>
+                                        IBK연금보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_26">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_26" name="n_life">
+                                    <label for="rad_life_26">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/img_insurance_etc_3_s.png" alt="신협">
+                                        </span>
+                                        신협
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_27">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_27" name="n_life">
+                                    <label for="rad_life_27">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/img_insurance_etc_2_s.png" alt="수협">
+                                        </span>
+                                        수협
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_28">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_28" name="n_life">
+                                    <label for="rad_life_28">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/img_insurance_etc_4_s.png" alt="우체국보험">
+                                        </span>
+                                        우체국보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_29">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_29" name="n_life">
+                                    <label for="rad_life_29">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/img_insurance_etc_5_s.png" alt="더케이보험">
+                                        </span>
+                                        더케이보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_30">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_life_30" name="n_life">
+                                    <label for="rad_life_30">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/life/img_insurance_life_11_s.png" alt="PCA생명">
+                                        </span>
+                                        PCA생명
+                                    </label>
+                                </div>
+                            </li>
+                            <!-- //210118 수정 (로고이미지 img 태그로 수정) -->
+                        </ul>
+                    </div>
+
+                    <!-- 손해보험 -->
+                    <div id="tabCon02" aria-labelledby="손해보험" role="tabpanel" class="panel">
+                        <ul class="radio_insur_list loss">
+                            <!-- 210118 수정 (로고이미지 img 태그로 수정) -->
+                            <li class="item_1">
+                                <div class="radio bgcolor"> <!-- 210122_ui변경_(.bgcolor 클래스 추가) -->
+                                    <input type="radio" id="rad_loss_1" name="n_loss">
+                                    <label for="rad_loss_1">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_5_s.png" alt="KB손해보험">
+                                        </span>
+                                        KB손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_2">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_2" name="n_loss">
+                                    <label for="rad_loss_2">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_7_s.png" alt="NH농협손해보험">
+                                        </span>
+                                        NH농협손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_3">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_3" name="n_loss">
+                                    <label for="rad_loss_3">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_6_s.png" alt="MG손해보험">
+                                        </span>
+                                        MG손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_4">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_4" name="n_loss">
+                                    <label for="rad_loss_4">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_13_s.png" alt="하나손해보험">
+                                        </span>
+                                        하나손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_5">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_5" name="n_loss">
+                                    <label for="rad_loss_5">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_3_s.png" alt="카디프손해보험">
+                                        </span>
+                                        카디프손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_6">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_6" name="n_loss">
+                                    <label for="rad_loss_6">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_4_s.png" alt="DB손해보험">
+                                        </span>
+                                        DB손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_7">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_7" name="n_loss">
+                                    <label for="rad_loss_7">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_14_s.png" alt="한화손해보험">
+                                        </span>
+                                        한화손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_8">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_8" name="n_loss">
+                                    <label for="rad_loss_8">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_16_s.png" alt="흥국화재">
+                                        </span>
+                                        흥국화재
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_9">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_9" name="n_loss">
+                                    <label for="rad_loss_9">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_10_s.png" alt="삼성화재">
+                                        </span>
+                                        삼성화재
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_10">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_10" name="n_loss">
+                                    <label for="rad_loss_10">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_8_s.png" alt="롯데손해보험">
+                                        </span>
+                                        롯데손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_11">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_11" name="n_loss">
+                                    <label for="rad_loss_11">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_15_s.png" alt="현대해상화재보험">
+                                        </span>
+                                        현대해상화재보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_12">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_12" name="n_loss">
+                                    <label for="rad_loss_12">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_2_s.png" alt="AXA 다이렉트">
+                                        </span>
+                                        AXA 다이렉트
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_13">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_13" name="n_loss">
+                                    <label for="rad_loss_13">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_1_s.png" alt="AIG 손해보험">
+                                        </span>
+                                        AIG 손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_14">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_14" name="n_loss">
+                                    <label for="rad_loss_14">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_9_s.png" alt="메리츠화재">
+                                        </span>
+                                        메리츠화재
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_15">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_15" name="n_loss">
+                                    <label for="rad_loss_15">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_12_s.png" alt="캐롯손해보험">
+                                        </span>
+                                        캐롯손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="item_16">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_16" name="n_loss">
+                                    <label for="rad_loss_16">
+                                        <span class="brand_s_logo">
+                                            <img src="../images/logo/loss/img_insurance_loss_11_s.png" alt="에이스손해보험">
+                                        </span>
+                                        에이스손해보험
+                                    </label>
+                                </div>
+                            </li>
+                            <!-- //210118 수정 (로고이미지 img 태그로 수정) -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em disabled" disabled><span>다음</span></button>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script>
+	$(function(){
+		var radioTab =  function() {
+			return {
+				init: function() {
+					this.radioTabView();
+				},
+				radioTabView: function() {
+                    var $buttonState = $('.conts_page>.btn_wrap>button');
+                    
+					$(document)
+                        .off('click', '.radio_tab .radio_list>li')
+                        .on('click', '.radio_tab .radio_list>li' , function(){
+							var $current = $(this);
+                            var index = $current.index();
+                            var $panels = $current.parent().siblings('.panels');
+                            $current.addClass('selected');
+                            $current.siblings().removeClass('selected');
+
+                            var $target = $panels.find('>.panel:eq(' + index + ')');
+                            $target.addClass('selected').attr('tabindex', 0).siblings().removeClass('selected').removeAttr('tabindex').find('.radio').removeClass('check');
+                            
+                            if(!($buttonState.prop('disabled'))) $buttonState.attr('disabled', true).addClass('disabled');
+ 
+                    })
+                        
+                    $(document)
+                        .off('click', '.radio_insur_list li input:radio')
+                        .on('click', '.radio_insur_list li input:radio' , function(){
+                            if($buttonState.prop('disabled')) $buttonState.attr('disabled', false).removeClass('disabled');
+                    })
+
+				}
+			}
+		}
+        radioTab().init();
+
+	});
+</script>
+</body>
+</html>

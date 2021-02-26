@@ -1,0 +1,136 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>확인서생성_상품 변경(SGA_SB_07009)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap_smart"> <!-- 210122_ui변경_스마트확인서일 경우 .wrap_smart 클래스 추가  -->
+
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">스마트 확인서</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+
+	<section class="content">
+
+        <div style="padding:3rem;">
+
+            <button type="button" aria-haspopup="true" data-target="#layer1p" class="btn js_btnlayerpop">비교 상품 변경</button><br><br>
+
+        </div>
+        
+    </section>
+
+</div>
+
+<!-- 비교 상품 변경 layer popup -->
+<section class="layerpop_wrap full" id="layer1p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">비교 상품 변경</h1>
+                </header>
+                <div class="layerpop_body">
+                    <div class="lay_sm_create_cange">
+
+                        <div class="list_bul mt0">
+                            <ul>
+                                <li class="bul_dot">· 비교상품은 청약상품과 동일한 상품군에서 선택하여<br> 변경할 수 있습니다.</li>
+                                <li class="bul_dot">· 비교상품과 청약상품은 모두 각각 다른 보험사의 상품이<br> 선택되어야 합니다.</li>
+                            </ul>
+                        </div>
+
+                        <!-- 비교상품명 검색 -->
+                        <div class="scr_wrap">
+                            <input type="text" placeholder="비교상품명을 검색하세요." title="비교상품명 검색">
+                            <button type="button" class="btn s"><span>검색</span></button> <!-- 210125 수정 -->
+                        </div>
+
+                        <!-- 해당하는 상품이 없을 경우 -->
+                        <p class="no_result">해당하는 보험상품이 존재하지 않습니다.</p>
+                        <!-- //해당하는 상품이 없을 경우 -->
+                        
+                        <!--  보험상품 list -->
+                        <div class="is_prd_list">
+                            <ul class="list">
+                                <li>
+                                    <div class="radio bgcolor"> <!-- 210122_ui변경_(.bgcolor 클래스 추가) -->
+                                        <input type="radio" id="rad_prod_1" name="n_prod">
+                                        <label for="rad_prod_1" class="box_prd">
+                                            <span class="left">
+                                                <span class="brand_logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></span>
+                                                <span class="prd">멋진 오렌지 종신보험 v2.0 (무배당, 해지환급금 일부지급형)</span>
+                                            </span>    
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio bgcolor">
+                                        <input type="radio" id="rad_prod_2" name="n_prod">
+                                        <label for="rad_prod_2" class="box_prd">
+                                            <span class="left">
+                                                <span class="brand_logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></span>
+                                                <span class="prd">(무)교보실속있는종신보험(보증비용부과형)</span>
+                                            </span>    
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio bgcolor">
+                                        <input type="radio" id="rad_prod_3" name="n_prod">
+                                        <label for="rad_prod_3" class="box_prd">
+                                            <span class="left">
+                                                <span class="brand_logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></span>
+                                                <span class="prd">(무)교보실속있는New건강플러스종신보험(보증비용부과형)</span>
+                                            </span>    
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- bottom button -->
+                <div class="layerpop_foot">
+                    <div class="btn_wrap strong">
+                        <button type="button" class="btn js_close"><span>취소</span></button>
+                        <button type="button" class="btn em"><span>상품 변경</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="layerpop_close">
+                <button type="button" class="js_close"><span class="blind">팝업닫기</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //비교 상품 변경 layer popup -->
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+</body>
+</html>

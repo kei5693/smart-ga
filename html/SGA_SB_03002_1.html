@@ -1,0 +1,164 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>가망고객등록-법인(SGA_SB_03002)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<!-- skip -->
+<!-- <div id="skip">
+    <a href="#content">본문 바로가기</a>
+    <a href="#bottom_navmn">메뉴 바로가기</a>
+</div> -->
+
+<div id="wrap">
+		
+	<header class="header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title">가망 고객 등록</h1>
+    </header>
+
+	<section class="content">
+		<div class="conts_page pg_hpcsreg">
+            
+            <div class="jstab type01 link">
+                <div class="tabinner">
+                    <ul class="tabs">
+                        <li><a href="#">개인</a></li>
+                        <li class="selected"><a href="#">법인</a></li>
+                    </ul>
+                </div>
+
+                <div class="panels">
+                    <div aria-labelledby="법인" class="panel selected">
+                        <h3 class="spo_tit2">기본정보</h3>
+                        <!-- form list -->
+                        <div class="form02_list">
+                            <div class="fm_hr">
+                                <strong class="label">법인명</strong> <!-- 201230_수정(문구수정 수정) -->
+                                <div class="row">
+                                    <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                                        <input type="text" title="고객명" placeholder="법인명을 입력하세요."> <!-- 201230_수정(placeholder 값 수정) -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm_hr">
+                                <strong class="label">사업자번호</strong>
+                                <div class="row">
+                                    <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                                        <input type="tel" title="사업자번호. - 없이 숫자만 입력하세요." placeholder="- 없이 숫자만 입력하세요.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm_hr">
+                                <strong class="label">연락처</strong>
+                                <div class="row">
+                                    <div class="input_wrap reinput">
+                                        <input type="tel" maxlength="11" title="연락처. - 없이 숫자만 입력하세요." placeholder="- 없이 숫자만 입력하세요.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="line">
+
+                        <h3 class="spo_tit2">부가 정보</h3>
+                        <!-- form list -->
+                        <div class="form02_list">
+                            <div class="fm_hr">
+                                <strong class="label">대표자</strong>
+                                <div class="row">
+                                    <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                                        <input type="text" title="대표자" placeholder="대표자명을 입력하세요.">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 주소 검색 -->
+                            <div class="fm_hr sch_addr">
+                                <strong class="label">주소</strong>
+                                <div class="row">
+                                    <button type="button" class="btn_sch_addr"><span>주소 검색</span></button>
+                                </div>
+                                <div class="row multi">
+                                    <div class="input_wrap readonly"> <!-- readonly 클래스 추가 -->
+                                        <input type="text" title="주소" readonly>
+                                    </div>
+                                    <div class="input_wrap reinput">
+                                        <input type="text" title="상세 주소" placeholder="상세 주소를 입력하세요.">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //주소 검색 -->
+                            <div class="fm_hr">
+                                <strong class="label">업종</strong>
+                                <div class="row">
+                                    <div class="input_wrap reinput">
+                                        <input type="text" title="업종" placeholder="예) 제조업">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm_hr">
+                                <strong class="label">종업원 수</strong>
+                                <div class="row">
+                                    <div class="input_wrap reinput">
+                                        <input type="text" title="종업원 수" placeholder="예)100명">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm_hr">
+                                <strong class="label">매출액</strong>
+                                <div class="row">
+                                    <div class="input_wrap reinput">
+                                        <input type="text" title="매출액" placeholder="예)1억 원">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- button -->
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em"><span>가망 고객 등록</span></button>
+            </div>
+
+		</div>
+	</section>
+
+	<!-- bottom fix menu -->
+	<nav class="bottom_navmn">
+		<div class="conts">
+			<a href="#" class="nv_home"><span class="blind">홈</span></a> <!-- 선택된 페이지 .on 클래스 추가 -->
+			<a href="#" class="nv_cal on"><span class="blind">일정관리</span></a>
+			<a href="#" class="nv_cs"><span class="blind">고객관리</span></a>
+			<a href="#" class="nv_more"><span class="blind">더 보기</span></a>
+		</div>
+	</nav>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+
+</body>
+</html>

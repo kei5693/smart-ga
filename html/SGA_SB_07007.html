@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>확인서생성_상품정보(SGA_SB_07007)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap_smart"> <!-- 210122_ui변경_스마트확인서일 경우 .wrap_smart 클래스 추가  -->
+		
+	<!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">스마트 확인서</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+		<div class="conts_page pg_sm_create_3">
+            
+            <p class="brand_logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></p>
+
+            <h2 class="spo_tit2">KB손해보험<br>정기 보험</h2>
+
+            <p class="txt16">청약 상품을 선택해주세요.</p>
+
+            <!-- 상품 list -->
+            <div class="radio_insur_list prod">
+                <ul>
+                    <li>
+                        <div class="radio bgcolor"> <!-- 210122_ui변경_(.bgcolor 클래스 추가) -->
+                            <input type="radio" id="rad_prod_1" name="n_prod">
+                            <label for="rad_prod_1">무배당 유니버셜달러종신보험(보증비용부과형)</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor">
+                            <input type="radio" id="rad_prod_2" name="n_prod">
+                            <label for="rad_prod_2">무배당 백만인을 위한 달러종신보험[저해지환급금형]</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor">
+                            <input type="radio" id="rad_prod_3" name="n_prod">
+                            <label for="rad_prod_3">무배당 메트라이프 간편가입종신보험[저해지환급금형][유해지환급금형]</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor">
+                            <input type="radio" id="rad_prod_4" name="n_prod">
+                            <label for="rad_prod_4">무배당 New스마트플랜 변액유니버셜종신보험</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em disabled" disabled><span>다음</span></button>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script>
+	$(function(){
+		var radioTab =  function() {
+			return {
+				init: function() {
+					this.radioTabView();
+				},
+				radioTabView: function() {
+                    var $buttonState = $('.conts_page>.btn_wrap>button');
+                     
+                    $(document)
+                        .off('click', '.radio_insur_list li input:radio')
+                        .on('click', '.radio_insur_list li input:radio' , function(){
+                            if($buttonState.prop('disabled')) $buttonState.attr('disabled', false).removeClass('disabled');
+                    })
+
+				}
+			}
+		}
+        radioTab().init();
+
+	});
+</script>
+</body>
+</html>

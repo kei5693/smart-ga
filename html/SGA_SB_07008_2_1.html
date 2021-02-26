@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>고객 상세(SGA_SB_03004)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<!-- skip -->
+<!-- <div id="skip">
+    <a href="#content">본문 바로가기</a>
+    <a href="#bottom_navmn">메뉴 바로가기</a>
+</div> -->
+
+<div id="wrap" class="wrap_smart"> <!-- 210122_ui변경_스마트확인서일 경우 .wrap_smart 클래스 추가  -->
+		
+	<!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">스마트 확인서</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+
+        <div style="padding:3rem;">
+
+            <button type="button" aria-haspopup="true" data-target="#layer1p" class="btn js_btnlayerpop">실명과 연락처, 생년월일을 확인 layer</button><br><br>
+
+        </div>
+        
+    </section>
+
+</div>
+
+<!-- layer popup -->
+<section class="layerpop_wrap alertpop" id="layer1p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">SMS 발송</h1>
+                </header>
+                <div class="layerpop_body">
+                    <div class="lay_sms_send">
+                        <strong class="spo_tit2_1">싱픔비교확인서를 수신할 고객의<br><strong class="strong">실명</strong>과 <strong class="strong">연락처</strong>, <strong class="strong">생년월일</strong>을 확인해주세요.</strong>
+
+                        <!-- form list -->
+                        <div class="form02_list mt30">
+                            <div class="fm_hr">
+                                <strong class="label">고객실명</strong>
+                                <div class="row">
+                                    <div class="input_wrap">
+                                        <input type="text" value="유정연" title="고객실명">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm_hr">
+                                <strong class="label">연락처</strong>
+                                <div class="row">
+                                    <div class="input_wrap">
+                                        <input type="tel" value="01012345678"  maxlength="11" title="연락처" placeholder="- 없이 숫자만 입력하세요.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm_hr">
+                                <strong class="label">생년월일</strong>
+                                <div class="row">
+                                    <div class="date_select">
+                                        <input type="text" placeholder="생년월일을 선택하세요." title="생년월일" class="form-control" data-toggle="datepicker" readonly> <!-- 210204_수정(readonly 추가/placeholder 문구수정) -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layerpop_foot">
+                    <button type="button" class="btn_pop_alert gray js_close"><span>취소</span></button>
+                    <button type="button" class="btn_pop_alert"><span>전송</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //layer popup -->
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script type="text/javascript">
+$(function() {
+
+    $('[data-toggle="datepicker"]').datepicker({zIndex: 9048});
+    
+});
+</script>
+
+</body>
+</html>

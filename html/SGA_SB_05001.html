@@ -1,0 +1,181 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>실적 조회(SGA_SB_05001)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<!-- skip -->
+<!-- 210111 삭제 <div id="skip">
+    <a href="#content">본문 바로가기</a>
+    <a href="#bottom_navmn">메뉴 바로가기</a>
+</div> -->
+
+<div id="wrap" class="bg_gray">
+		
+	<header class="header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title">실적 조회</h1>
+    </header>
+
+	<section class="content">
+		<div class="conts_page pg_rsinq">
+
+            <div class="tit_wrap">
+                <h2 class="tit3"><strong>이지은님의 실적 현황</strong></h2>
+
+                <!-- 날짜선택 -->
+                <div class="al_r date_select">
+                    <input type="text" class="form-control" data-toggle="datepicker" title="날짜 선택" readonly> <!-- 210204_수정(readonly 추가) -->
+                </div>
+            </div>
+
+            <!-- 수수료 요약 -->
+            <div class="box rsinq_summ">
+                <div class="tit_wrap">
+                    <strong class="spo_tit2">수수료 요약</strong>
+                    <span class="al_r">(13차월)</span>
+                </div>
+                <div class="rsinq_list">
+                    <ul class="list">
+                        <li>
+                            <div class="th">
+                                <strong>신계약</strong>
+                            </div>
+                            <div class="td">
+                                <span class="number">
+                                    100,000
+                                    <span class="unit">원</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="th">
+                                <strong>유지 계약</strong>
+                            </div>
+                            <div class="td">
+                                <span class="number">
+                                    100,000
+                                    <span class="unit">원</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="th">
+                                <strong>영업관리</strong>
+                            </div>
+                            <div class="td">
+                                <span class="number">
+                                    0
+                                    <span class="unit">원</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="th">
+                                <strong>부활</strong>
+                            </div>
+                            <div class="td">
+                                <span class="number">
+                                    0
+                                    <span class="unit">원</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="th">
+                                <strong>환수</strong>
+                            </div>
+                            <div class="td">
+                                <span class="number">
+                                    -50,000
+                                    <span class="unit">원</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="th">
+                                <strong>기타 지급/공제</strong>
+                            </div>
+                            <div class="td">
+                                <span class="number">
+                                    50,000
+                                    <span class="unit">원</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="bottom">
+                            <div class="th">
+                                <strong>(세후) 지급 수수료</strong>
+                            </div>
+                            <div class="td">
+                                <span class="number">
+                                    193,400
+                                    <span class="unit">원</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 수수료 추이 -->
+            <div class="box rsinq_watch">
+                <strong class="spo_tit2">수수료 추이</strong>
+                <!-- 범주 -->
+                <div class="flex cate">
+                    <span class="cate1">지급수수료</span>
+                    <span class="cate2">신계약수수료</span>
+                </div>
+
+                <!-- chart -->
+                <div class="chart_wrap">
+                    <img src="../images/temp_chart_02.png" alt="">
+                </div>
+            </div>
+
+		</div>
+	</section>
+
+	<!-- bottom fix menu -->
+	<!-- 210111 삭제 <nav class="bottom_navmn">
+		<div class="conts">
+			<a href="#" class="nv_home"><span class="blind">홈</span></a>
+			<a href="#" class="nv_cal"><span class="blind">일정관리</span></a>
+			<a href="#" class="nv_cs"><span class="blind">고객관리</span></a>
+			<a href="#" class="nv_more"><span class="blind">더 보기</span></a>
+		</div>
+	</nav> -->
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script type="text/javascript">
+$(function() {
+
+    $('[data-toggle="datepicker"]').datepicker();  //210127 수정
+    
+});
+</script>
+</body>
+</html>

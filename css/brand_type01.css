@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/*
+ * [EDA] UI Dev Team
+ * @description [EDA] brand color type 1
+ */
+
+.no_result::after, .box_mypfinfo .photo, .csmge_sumup .left strong.ico::after, .box_mypfinfo .photo::after, .pg_crview .cr_total::after, .bt_call::after, .pg_compymage .contract_list li[class^="no"] .contract_li::after, .pg_gift a.top_point::after, .pg_gift .conts_present::after, .pg_gift_charge .top_balance::after, .lay_gift_opt .message::after, .top_head.img::after, .header .logo, .pg_main .contract .go_submn .box::after{display:block;background-image:url('../images/brand_type01.png');background-size:50rem auto}
+
+/* key text color */
+.fc_keycolor{color:#615CC0 !important;} 
+
+/* key bg color */
+.fc_keybgcolor{background-color:#615CC0 !important;} 
+
+/* layerpopup bottom key text color */
+.btn_pop_alert{color:#615CC0} 
+
+/* button bg color */
+.btn.em, .btn_wrap.strong .btn.em{border:1px solid #615CC0;background-color:#615CC0;} 
+
+/* input line color */
+.input_wrap.etc.on::after{background-color:#615CC0} 
+.input_wrap.on{border:1px solid #615CC0;}
+/* //input line color */
+
+/* radio/checkbox icon */
+.checkbox.icon.check label svg path, .radio.icon.check label svg path, .radio.icon.check label svg circle{fill:#615CC0;}
+
+/* radio/checkbox */
+.checkbox.bgcolor.check label, .radio.bgcolor.check label{border:1px solid #615CC0;background-color:rgba(97,92,192,.1);}
+.check_list .checkbox.bgcolor.check label, .radio_list .radio.bgcolor.check label{border:0;background-color:#615CC0;}
+
+/* radio/checkbox - 고객관리 입력폼에서 사용 */
+.stick_checkbox_list .checkbox.bgcolor.check label, .stick_radio_list .radio.bgcolor.check label{border:1px solid rgba(0,0,0,.2);background-color: rgba(97,92,192,.4);}
+
+/* key color 로 강조된 Link 일 때 사용  */
+.bgcolor_selected{border:1px solid #615CC0 !important;background-color:rgba(97,92,192,.1) !important;}
+
+/* toast bg color */
+#toast{background-color:#615CC0} 
+
+/* header */
+.header .logo{background-position:0 -43rem;}
+
+/* main */
+.pg_main .contract .go_submn .box:nth-of-type(1)::after{background-position:-5rem -43rem;}
+.pg_main .contract .go_submn .box:nth-of-type(2)::after{background-position:-10rem -43rem;}
+.pg_main .contract .go_submn .box:nth-of-type(3)::after{background-position:-15rem -43rem;}
+.pg_main .special .box{background-color:#615CC0;} 
+.pg_main .bg_gray_top{background-color:#F1F0EC;}
+.pg_main .contract .box .row_wrap{background-color:#F7F6F3;}
+
+/* 날짜선택 달력에서 선택된 day */
+.datepicker-panel > ul > li.picked::after, .datepicker-panel > ul > li.picked:hover::after{background-color:rgba(97,92,192,.4);}
+
+/* type01 의 tab 에서 선택된 tab의 배경색 */
+.jstab.type01 .tabinner>.tabs li.selected a{background-color:rgba(97,92,192,.4);}
+
+/* type02 의 tab 배경색 */
+.type02>.tabinner{background-color:rgba(97,92,192,.3);}
+
+/* type03 의 tab 에서 선택된 tab의 배경색 */
+.type03 .tabinner>.tabs li.selected a{background-color:#615CC0} 
+
+/* box link */
+.box_link.blue a.link, .box_link.blue a.ico{background-color:rgb(97,92,192,.4);}
+
+/* 간편비밀번호 선택 배경색 */
+.easy_pw_wrap .top_head .dp_view span.on{background-color:rgba(97,92,192,.4);}
+
+/* toggle 툴팁 */
+.togglemk .boxtogmk {background-color:#DFDEF3;}
+.togglemk .boxtogmk::after{border-top:1.1rem solid #DFDEF3;}
+
+/* join - top title */
+.conts_page.pg_agent .top_head.img::after{width:7.8rem;height:5.7rem;background-position:0 -11rem;}
+.conts_page.pg_usercf .top_head.img::after{width:7.4rem;height:6.6rem;background-position:-11rem -11rem;}
+
+/* 결과없음 */
+div.no_result::after{background-position:-6rem -22rem;}
+
+/* 알림센터 */
+.pg_notice .no_result::after{background-position:0 -22rem;}
+
+/* page bottom right fixed round button */
+.float_wrap .float_add{background-color:#615CC0} /* 일정관리 일정 추가 button */
+
+/* 일정관리의 달력 선택된 day 배경색 */
+.pg_schedule .calendar td.active .day{background-color:rgba(97,92,192,.4);}
+
+/* 고객관리 */
+.pg_csmage .special_mn a{background-color:#CFCEEC;}
+.pg_hpcsdet .box_csmge_sumup{background-color:#CFCEEC;}
+.pg_hpcsdet .box_csmge_sumup .side{background-color:#817ECD;}
+.pg_hpcsdet .box_csmge_sumup .desc_info{background-color:#615CC0;}
+.csmge_sumup .left strong.ico::after{background-position:0 -30rem;}
+
+/* 계약조회 */
+.pg_crview .cr_total{background-color:#615CC0;}
+.pg_crview .cr_total::after{background-position:-22rem -11rem;}
+.pg_crcsview .box_stats .have_total{background-color:#CFCEEC;}
+.pg_crcsview div.no_result::after{background-position:-12rem -22rem;}
+
+/* 실적조회 수수료 요약 하단 라인색 */
+.pg_rsinq .rsinq_summ .rsinq_list{border-bottom:.6rem solid rgba(97,92,192,.4);}
+.pg_rsinq .rsinq_watch .cate span.cate1::before{background-color:#BFBEE6;}
+.pg_rsinq .rsinq_watch .cate span.cate2::before{background-color:#615CC0;}
+
+/* 더보기 */
+.box.box_mypfinfo{background-color:#CFCEEC;}
+.pg_more_stats .box_use_stats{background-color:#CFCEEC;}
+.pg_more_stats .box_use_stats .use_total .total{background-color:#A09DD9;}
+
+.box_mypfinfo .photo.male{background-position:0 0;}
+.box_mypfinfo .photo.female{background-position:-10rem 0;}
+.box_mypfinfo .photo::after{background-position:-35rem 0;}
+.box.box_mypfinfo .photo::after{background-position:-25rem 0;}
+.pg_more_info .insur_list .insur_li .bt_call::after{background-position:-5rem -30rem;}
+.pg_more_ircall .ircall_list .bt_call::after{background-position:-5rem -30rem;}
+
+.graph_bar .cate.current .bar_wrap .bar{background-color:#615CC0;}
+.graph_bar .cate.prev .bar_wrap .bar{background-color:#C0BEE6;}
+.pg_compymage .box_begin .cate p.cate1::before{background-color:#615CC0;}
+.pg_compymage .box_begin .cate p.cate2::before{background-color:#807CCC;}
+.pg_compymage .box_begin .cate p.cate3::before{background-color:#A09DD9;}
+.pg_compymage .box_begin .cate p.cate4::before{background-color:#C0BEE6;}
+.pg_compymage .box_begin .cate p.cate5::before{background-color:#EBEBEB;}
+
+.pg_compymage .contract_list li.no1 .contract_li::after{background-position:0 -37rem;}
+.pg_compymage .contract_list li.no2 .contract_li::after{background-position:-5rem -37rem;}
+.pg_compymage .contract_list li.no3 .contract_li::after{background-position:-10rem -37rem;}
+
+/* 선물하기 */
+.pg_gift .conts_present .type03 .tabinner>.tabs li.selected a{background-color:#615CC0;}
+.pg_gift a.top_point::after{background-position:0 -30rem;}
+.pg_gift a.box.top_point{background-color:#DFDEF3;}
+.pg_gift .conts_present::after{background-position:-29rem -11rem;}
+.pg_gift_charge .top_balance::after{background-position:-38.5rem -9.5rem;}
+.lay_gift_opt .message.msg_conts::after{background-position:-10rem -30rem;}
+.lay_gift_opt .message.msg_gift::after{background-position:0 -30rem;}
+
+
+
+

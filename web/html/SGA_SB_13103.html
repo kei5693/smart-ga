@@ -1,0 +1,273 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>청구서작성_보험금청구(SGA_SB_13103)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css">
+	<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+
+<div id="wrap" class="wrap_claim">
+		
+	<header class="header">
+        <span class="logo"><img src="../images/img_logo_smartGA.png" alt="Smart GA"></span>
+        <h1 class="title">보험금 청구</h1>
+    </header>
+
+	<div class="content">
+		<div class="conts_page pg_claim_3">
+            <div class="process_wrap">
+                <ul class="process_bar">
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li></li>
+                </ul>
+
+                <p class="process_txt">
+                    <span class="blind">현재단계</span> 3 / <span class="blind">전체단계</span> 4
+                </p>
+            </div>
+
+            <h2 class="spo_tit2">보험금 청구서 작성</h2>
+            
+            <h2 class="spo_tit4 mt40">피보험자(보험 대상자)를 확인해주세요.</h2>
+            <div class="form02_list">
+                <div class="fm_hr">
+                    <strong class="label">고객명</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="text" value="김보험" title="고객명" placeholder="고객명을 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">연락처</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="tel" value="01012345678" title="연락처. - 없이 숫자만 입력하세요." placeholder="- 없이 숫자만 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="line mt40">
+
+            <div class="form02_list type02 mt30">
+                <div class="fm_hr">
+                    <strong class="label">청구 사유를 선택해주세요.</strong>
+                    <div class="row">
+                        <ul class="fm_radio_list fm_col2">
+                            <li>
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="reason_rad_1" name="n_reason_radio">
+                                    <label for="reason_rad_1">상해/ 재해</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="reason_rad_2" name="n_reason_radio">
+                                    <label for="reason_rad_2">질병</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">입/통원 선택</strong>
+                    <div class="row">
+                        <ul class="fm_radio_list fm_col2">
+                            <li>
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="hospital_rad_1" name="n_hospital_radio">
+                                    <label for="hospital_rad_1">입원</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="hospital_rad_2" name="n_hospital_radio">
+                                    <label for="hospital_rad_2">통원</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">치료기간을 선택해주세요.</strong>
+                    <div class="row">
+                        <div class="list_bul">
+                            <p class="bul_dot">· 입원과 통원을 함께 청구하실 경우 입원을 선택해주세요.</p>
+                        </div>
+                        <div class="group">
+                            <div class="date_select">
+                                <input type="text" title="시작일" class="form-control" data-toggle="datepicker" readonly>
+                            </div>
+                            <span class="mark period_txt">부터</span>
+                            <div class="date_select">
+                                <input type="text" title="마지막일" class="form-control" data-toggle="datepicker" readonly>
+                            </div>
+                            <span class="mark period_txt">까지</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="line mt40">
+
+            <div class="form02_list type02 mt30">
+                <div class="fm_hr">
+                    <strong class="label">사고 내용을 입력해주세요.</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="text" title="사고 내용" placeholder="예) 회사 앞 계단에서 미끄러짐">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">진단명을 입력해주세요.</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="text" title="진단명" placeholder="예) 골절">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">사고일시를 선택해주세요.</strong>
+                    <div class="row">
+                        <div class="date_select">
+                            <input type="text" title="사고일시" class="form-control" data-toggle="datepicker" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="line mt40">
+
+            <h2 class="spo_tit4 mt30">보험금을 지급 받을 계좌를 입력해주세요.</h2>
+            <div class="form02_list">
+                <div class="fm_hr">
+                    <strong class="label">은행</strong>
+                    <div class="row">
+                        <div class="select_layer">
+                            <button type="button" aria-haspopup="true" data-target="#select_layer" class="button_select js_btnlayerpop"><span>은행을 선택해 주세요</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">계좌번호</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="tel" title="계좌번호. - 없이 숫자만 입력하세요." placeholder="- 없이 숫자만 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">예금주명</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="text" title="예금주명" placeholder="예금주명을 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label lb_row">예금주<br>주민등록번호</strong>
+                    <div class="row">
+                        <div class="group">
+                            <div class="input_wrap col reinput">
+                                <input type="tel" maxlength="6" title="주민등록번호 앞자리">
+                            </div>
+                            <span class="mark bar"><span class="blind">-</span></span>
+                            <div class="input_wrap col reinput">
+                                <input type="tel" maxlength="7" title="주민등록번호 뒷자리">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  button -->
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em"><span>증빙서류 첨부하기</span></button>
+            </div>
+
+		</div>
+	</div>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<!-- select layer popup -->
+<section class="layerpop_wrap bottom" id="select_layer" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">은행을 선택 하세요.</h1>
+                </header>
+                <div class="layerpop_body">
+                    <ul class="dropbox_tp1" role="listbox">
+                        <li><a href="javascript:;" role="option">카카오뱅크</a></li>
+                        <li><a href="javascript:;" role="option">국민은행</a></li>
+                        <li><a href="javascript:;" role="option">기업은행</a></li>
+                        <li><a href="javascript:;" role="option">농협은행</a></li>
+                        <li><a href="javascript:;" role="option">신한은행</a></li>
+                        <li><a href="javascript:;" role="option">KEB하나은행</a></li>
+                        <li><a href="javascript:;" role="option">우체국</a></li>
+                        <li><a href="javascript:;" role="option">새마을금고</a></li>
+                        <li><a href="javascript:;" role="option">SC제일은행</a></li>
+                        <li><a href="javascript:;" role="option">광주은행</a></li>
+                        <li><a href="javascript:;" role="option">경남은행</a></li>
+                        <li><a href="javascript:;" role="option">신협</a></li>
+                        <li><a href="javascript:;" role="option">한국씨티은행</a></li>
+                        <li><a href="javascript:;" role="option">KEB하나은행(외)</a></li>
+                        <li><a href="javascript:;" role="option">지역농축협</a></li>
+                        <li><a href="javascript:;" role="option">전북은행</a></li>
+                        <li><a href="javascript:;" role="option">수협</a></li>
+                        <li><a href="javascript:;" role="option">부산은행</a></li>
+                        <li><a href="javascript:;" role="option">케이뱅크</a></li>
+                        <li><a href="javascript:;" role="option">제주은행</a></li>
+                        <li><a href="javascript:;" role="option">KDB산업은행</a></li>
+                        <li><a href="javascript:;" role="option">저축은행</a></li>
+                        <li><a href="javascript:;" role="option">대구은행</a></li>
+                        <li><a href="javascript:;" role="option">산립조합중앙회</a></li>
+                        <li><a href="javascript:;" role="option">수출입은행</a></li>
+                        <li><a href="javascript:;" role="option">HSBC은행</a></li>
+                        <li><a href="javascript:;" role="option">도이치은행</a></li>
+                        <li><a href="javascript:;" role="option">BOA은행</a></li>
+                        <li><a href="javascript:;" role="option">유안타증권</a></li>
+                        <li><a href="javascript:;" role="option">미래에셋증권</a></li>
+                        <li><a href="javascript:;" role="option">미래에셋대우</a></li>
+                        <li><a href="javascript:;" role="option">KB증권</a></li>
+                        <li><a href="javascript:;" role="option">신한금융투자</a></li>
+                        <li><a href="javascript:;" role="option">키움증권</a></li>
+                        <li><a href="javascript:;" role="option">삼성증권</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layerpop_close">
+                <button type="button" class="js_close"><span class="blind">팝업닫기</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

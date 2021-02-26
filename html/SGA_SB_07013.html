@@ -1,0 +1,195 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>카메라 등록-정보입력(SGA_SB_07013)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="bg_gray wrap_smart"> <!-- 210122_ui변경_스마트확인서일 경우 .wrap_smart 클래스 추가  -->
+		
+	<!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">스마트 확인서</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+		<div class="conts_page pg_sm_camera_reg">
+
+            <div class="bg_white_top">
+
+                <h3 class="spo_tit2">청약상품 검색</h3>
+
+                <!-- 비교상품명 검색 -->
+                <div class="scr_wrap">
+                    <input type="text" placeholder="청약 상품명을 검색하세요." title="청약 상품명 검색">
+                    <button type="button" class="btn s"><span>검색</span></button> <!-- 210125 수정 -->
+                </div>
+
+                <!-- 해당하는 상품이 없을 경우 -->
+                <p class="no_result">
+                    해당하는 상품이 없습니다.<br><br>
+
+                    미등록 상품 요청은 고객센터(070-7725-6535)로<br>
+                    문의해 주시기 바랍니다.
+
+                    <span class="desc">
+                        고객센터 운영시간: 평일 09:00~18:00<br>
+                        (점심시간: 12:00~13:00)
+                    </span>
+                </p>
+                <!-- //해당하는 상품이 없을 경우 -->
+                
+                <!--  보험상품 list -->
+                <div class="is_prd_list">
+                    <ul class="list">
+                        <li>
+                            <div class="radio bgcolor"> <!-- 210122_ui변경_(.bgcolor 클래스 추가) -->
+                                <input type="radio" id="rad_prod_1" name="n_prod">
+                                <label for="rad_prod_1" class="box_prd">
+                                    <span class="left">
+                                        <span class="brand_logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></span>
+                                        <span class="prd">멋진 오렌지 종신보험 v2.0 (무배당, 해지환급금 일부지급형)</span>
+                                    </span>    
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio bgcolor">
+                                <input type="radio" id="rad_prod_2" name="n_prod">
+                                <label for="rad_prod_2" class="box_prd">
+                                    <span class="left">
+                                        <span class="brand_logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></span>
+                                        <span class="prd">(무)교보실속있는종신보험(보증비용부과형)</span>
+                                    </span>    
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio bgcolor">
+                                <input type="radio" id="rad_prod_3" name="n_prod">
+                                <label for="rad_prod_3" class="box_prd">
+                                    <span class="left">
+                                        <span class="brand_logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></span>
+                                        <span class="prd">(무)교보실속있는New건강플러스종신보험(보증비용부과형)</span>
+                                    </span>    
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <hr class="line">
+
+            <h3 class="spo_tit2">보험계약자 정보</h3>
+
+            <!-- 직접 입력 form -->
+            <div class="form02_list">
+                <div class="fm_hr">
+                    <strong class="label">계약자명</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="text" title="계약자명" placeholder="계약자명을 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">생년월일</strong>
+                    <div class="row">
+                        <div class="date_select">
+                            <input type="text" placeholder="생년월일을 선택하세요" title="생년월일" class="form-control" data-toggle="datepicker" readonly> <!-- 210204_수정(readonly 추가) -->
+                        </div>
+                    </div>
+                </div>
+                <!-- 210203_수정(보험료, 성별 추가) -->
+                <div class="fm_hr">
+                    <strong class="label">보험료</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="tel" title="보험료">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">성별</strong>
+                    <div class="row">
+                        <div class="rad_chk cols_sex">
+                            <span class="radio icon check">
+                                <input type="radio" id="male_rad" name="n_sex_radio" checked>
+                                <label for="male_rad">남성</label>
+                            </span>
+                            <span class="radio icon">
+                                <input type="radio" id="female_rad" name="n_sex_radio">
+                                <label for="female_rad">여성</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- //210203_수정(보험료, 성별 추가) -->
+            </div>
+
+
+            <!-- 증권번호 검색 -->
+            <div class="input_info_toggle">
+                <a href="#toggle-qmark1" class="tghead jstoggle" role="button" aria-expanded="false">
+                    <span class="tgtxt">이 계약의 증권번호를 알고 계신가요?<br>
+                        증권번호를 입력하면 확인서를 더 편하게<br>
+                        관리할 수 있습니다.</span>
+                </a>
+                <div id="toggle-qmark1" class="tgconts jstogglewrap" aria-hidden="true" tabindex="0">
+                    <div class="fm_hr">
+                        <div class="input_wrap s reinput">
+                            <input type="tel" title="증권번호/청약서 번호" placeholder="증권번호/청약서 번호를 입력하세요.">
+                        </div>
+                    </div>
+                    <div class="txr">
+                        <button type="button" class="btn em ms"><span>등록</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em"><span>확인서 등록</span></button>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script type="text/javascript">
+$(function() {
+
+    $('[data-toggle="datepicker"]').datepicker(); //210125 추가
+    
+});
+</script>
+</body>
+</html>

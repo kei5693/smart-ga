@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>확인서생성_확인서발송(SGA_SB_07011)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="bg_gray wrap_smart"> <!-- 210122_ui변경_스마트확인서일 경우 .wrap_smart 클래스 추가  -->
+		
+	<!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">스마트 확인서</span></h1>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+		<div class="conts_page pg_sm_create_5">
+            
+            <div class="box box_smcr_send">
+                <h2>보험계약자<br>
+                    <stron>김다현</stron> <span class="ws_nw">(010-5825-6584)</span>님께<br>
+                    <strong>스마트 확인서</strong>를 발송하였습니다.
+                </h2>
+                
+                <div class="btm_desc">
+                    <p class="txt16">문자 메시지를 확인하실 수 있도록 안내해주세요!</p>
+                </div>
+            </div>
+
+            <!-- 증권번호 검색 -->
+            <div class="input_info_toggle">
+                <a href="#toggle-qmark1" class="tghead jstoggle" role="button" aria-expanded="false">
+                    <span class="tgtxt">이 계약의 증권번호를 알고 계신가요?<br>
+                        증권번호를 입력하면 확인서를 더 편하게<br>
+                        관리할 수 있습니다.</span>
+                </a>
+                <div id="toggle-qmark1" class="tgconts jstogglewrap" aria-hidden="true" tabindex="0">
+                    <div class="fm_hr">
+                        <div class="input_wrap s reinput">
+                            <input type="tel" title="증권번호/청약서 번호" placeholder="증권번호/청약서 번호를 입력하세요.">
+                        </div>
+                    </div>
+                    <div class="txr">
+                        <button type="button" class="btn em ms"><span>등록</span></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn white"><span>스마트 확인서 메인으로 이동</span></button>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+
+</body>
+</html>

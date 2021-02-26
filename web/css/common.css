@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/*
+ * [EDA] UI Dev Team
+ * @description [EDA] common
+ */
+
+/* images */
+.box_warning::after, .file_down a.link_down::after, .pg_claim_fin .box_top_title::after{display:block;background-image:url('../images/sp_img.png');background-size:70rem auto}
+.pg_sm_proc_sign .sign_write .bt_rewrite::before, .pg_direct_info .carinfo-swiper .box::after, .pg_direct_info .newcar_link a::after, .pg_direct_inq .box::after, .pg_direct .bg_gray_top::after, .bt_question, .fm_hr .driver_select p.tt::after, .fm_radio_list .radio label::after{display:block;background-image:url('../images/sp_web.png');background-size:70rem auto}
+
+
+/* 주의박스 */
+.box_warning{position:relative;margin-bottom:4rem;padding:1.7rem 1.7rem 1.7rem 5.5rem;border:1px solid rgba(233,41,11,.8);border-radius:.8rem;color:#E9290B;}
+.box_warning::after{content:'';position:absolute;left:1.9rem;top:50%;width:2.6rem;height:2.6rem;margin-top:-1.3rem;background-position:-36rem -3rem;}
+
+/* file download */
+.file_down{margin-top:2.8rem;}
+.file_down a.link_down{display:block;position:relative;padding-left:2.8rem;}
+.file_down a.link_down::after{content:'';position:absolute;left:-1px;top:-2px;width:2.6rem;height:2.6rem;background-position:-61rem -26rem;}
+.file_down a.link_down span{font-size:1.6rem;line-height:2.2rem;text-decoration:underline;}
+
+/* 약관동의 */
+.all_agr_wrap .agr_list{margin-bottom:-.7rem;}
+.all_agr_wrap .checkbox input{position:absolute;left:0;top:0;opacity:0;}
+.all_agr_wrap .all .checkbox label{display:block;width:100%;padding:1.9rem 2rem 1.8rem 5rem;background-color:#fff;border:1px solid rgba(0,0,0,.2);border-radius:.8rem;font-size:1.8rem;font-weight:500;line-height:2.6rem;}
+.all_agr_wrap .all .checkbox label svg{left:2.1rem;top:2.3rem;}
+.all_agr_wrap .agr_list{padding:1.3rem 2rem 0 0;}
+.all_agr_wrap .agr_list li{padding:.7rem 0;}
+.all_agr_wrap .agr_list .checkbox label{padding-left:5rem;font-size:1.6rem;line-height:2.2rem;}
+.all_agr_wrap .agr_list .checkbox.icon label svg{top:.6rem;left:2.1rem;}
+.all_agr_wrap .agr_list .checkbox.icon.check label svg path{fill:#101010;}
+
+/* image view */
+.photo_img_view{width:100%;}
+.photo_img_view img{max-width:100%;}
+/* //image view */
+
+/* 약관 */
+.lay_terms_wrap .item + .item{margin-top:2rem;}
+.lay_terms_wrap h2{margin-bottom:.6rem;font-size:1.4rem;font-weight:400;line-height:2rem;}
+.lay_terms_wrap p{font-size:1.4rem;font-weight:400;line-height:2rem;}
+
+
+/* 인증번호 받기 */
+.form02_list.type02.fm_certify .fm_hr .txt_view{padding:.4rem 0;color:#929292;font-size:2rem;font-weight:700;line-height:2.8rem;}
+.certify_wrap{display:none;margin-top:8rem;}
+.certify_wrap .certify_input .input_wrap input {padding-right:5.2rem;}
+.certify_wrap .certify_input .input_wrap .fc_keycolor{position:absolute;right:1.2rem;top:0;height:4rem;font-size:1.6rem;font-weight:400;line-height:4rem;text-align:right;}
+.certify_wrap .certify_input .row .btn{margin-top:1.4rem;}
+/* //인증번호 받기 */
+
+/* process */
+.process_wrap{position:relative;height:2rem;padding-top:.4rem;}
+.process_wrap ul{display:-webkit-box;display:-webkit-flex;display:flex;height:.2rem;}
+.process_wrap li{width:100%;height:.2rem;background-color:#EBEBEB;font-size:0;line-height:0;}
+.process_wrap .process_txt{position:absolute;right:0;top:2rem;color:#707070;font-size:1.6rem;font-weight:700;line-height:2.2rem;text-align:right;}
+
+/* 보험상품 list */
+.is_prd_list{margin-top:.5rem;}
+.is_prd_list li{padding:.7rem 0;border-bottom:0;}
+.is_prd_list .box_prd{display:-webkit-box;display:-webkit-flex;display:flex;min-height:9.2rem;padding:0;border:1px solid rgba(0,0,0,.2);background-color:#fff;border-radius:.8rem;align-items:center;}
+.is_prd_list .box_prd .left{display:block;width:100%;padding:1rem 2rem;}
+.is_prd_list .box_prd .right{display:block;width:24%;border-left:1px solid rgba(0,0,0,.2);}
+.is_prd_list .box_prd .right button, .is_prd_list .box_prd .right a{display:block;width:100%;min-height:9.2rem;padding-top:.2rem;line-height:9rem;text-align:center;}
+.is_prd_list .radio .box_prd::before{display:none;}
+.is_prd_list .radio input{position:absolute;left:0;top:0;opacity:0;}
+.is_prd_list .prd{display:block;margin-top:.6rem;}
+.is_prd_list strong.prd{margin-top:1rem;}
+.is_prd_list .txt{margin-top:1rem;}
+.is_prd_list .fee{margin-top:.8rem;}
+.is_prd_list .fee .tt{color:#707070;line-height:2.2rem;}
+.is_prd_list .fee .num_fee{margin-left:.8rem;font-size:1.6rem;line-height:2.2rem;}
+
+
+/* 스마트 확인서 */
+.conts_page.pg_sm_expire{padding-top:2rem;}
+.pg_sm_expire .txt16{margin-top:3.5rem;}
+
+.pg_sm_proc_sign .line_tp_list{margin-top:2.8rem;}
+.pg_sm_proc_sign .line_tp_list .td{font-size:1.4rem;line-height:2rem;}
+.pg_sm_proc_sign .line_tp_list .td_wrap .desc{margin-top:.8rem;color:#929292;}
+.pg_sm_proc_sign .line_tp_list .td_wrap .desc strong{font-weight:400;}
+.pg_sm_proc_sign .line_tp_list .td_wrap .ps_txt{margin-top:.8rem;color:#707070;}
+.pg_sm_proc_sign .line_tp_list .td_sign::after{content:'';display:table;clear:both;}
+.pg_sm_proc_sign .line_tp_list .td_sign .fl{width:70%;}
+.pg_sm_proc_sign .line_tp_list .td_sign .fr{width:30%;text-align:right;}
+
+.pg_sm_proc_sign .sign_write{position:relative;margin:3.4rem 0 6rem;}
+.pg_sm_proc_sign .sign_write .bt_rewrite{position:absolute;right:0;top:-.4rem;padding:.2rem 0 0 2.8rem;color:#707070;line-height:2.4rem;}
+.pg_sm_proc_sign .sign_write .bt_rewrite::before{content:'';position:absolute;left:0;top:0;width:2.6rem;height:2.6rem;background-position:-40rem 0;}
+.pg_sm_proc_sign .sign_write .bt_rewrite span{white-space:nowrap;}
+.pg_sm_proc_sign .sign_write .sign_inner{display:-webkit-box;display:-webkit-flex;display:flex;width:100%;height:10rem;margin-top:1.5rem;color:#929292;font-size:3.2rem;line-height:4.2rem;text-align:center;justify-content:center;align-items:center;}
+
+.pg_sm_proc_1 .fm_hr .label, .pg_claim_1 .fm_hr .label{display:block;float:none;width:100%;font-weight:700;line-height:2.2rem;}
+.pg_sm_proc_1 .fm_hr .row, .pg_claim_1 .fm_hr .row{float:none;width:100%;margin-top:1rem;}
+
+/* 다다(다이렉트 광고) */
+.pg_direct .tit_wrap{margin:3.4rem 0 9rem;}
+.pg_direct .bg_gray_top{position:relative;}
+.pg_direct .bg_gray_top::after{content:'';position:absolute;right:1.9rem;bottom:2.9rem;width:11.2rem;height:3.7rem;background-position:0 -7.2rem;}
+
+.pg_direct_identify .tit_wrap{margin-top:3rem;}
+
+/* 물음표 button icon */
+.bt_question{display:inline-block;position:relative;width:2.6rem;height:2.6rem;background-position:-37rem -5rem;}
+
+/* box input list */
+.box.box_new_info .fm_hr .label, .box.box_inqrs .fm_hr .label{display:block;float:none;width:100%;color:#707070;font-size:1.4rem;font-weight:400;line-height:2rem;}
+.box.box_new_info .box .fm_hr .row, .box.box_inqrs .box .fm_hr .row{float:none;width:100%;margin-top:.4rem;}
+.box.box_new_info .box .fm_hr .row .txt_view, .box.box_inqrs .box .fm_hr .row .txt_view{min-height:1px;padding:0;}
+/* //box input list */
+
+
+.pg_direct_info .carinfo-swiper{margin:1.2rem -2.2rem 0;padding:0 2.2rem 7.9rem;}
+.pg_direct_info .swiper-container-horizontal>.swiper-pagination-bullets{bottom:4rem;line-height:1px;}
+.pg_direct_info .carinfo-swiper .swiper-pagination-bullet{width:1rem;height:1rem;background-color:#929292;opacity:1;}
+.pg_direct_info .carinfo-swiper .swiper-pagination-bullet-active{background-color:#101010;}
+.pg_direct_info .carinfo-swiper.one-slide{padding-bottom:4rem;}
+.pg_direct_info .carinfo-swiper.one-slide.swiper-container-horizontal>.swiper-pagination-bullets{display:none;}
+.pg_direct_info .carinfo-swiper .box{padding:1.5rem 2rem 4rem;background-color:#fff;}
+.pg_direct_info .carinfo-swiper .box::after{content:'';position:absolute;right:1.7rem;top:1.7rem;width:7.9rem;height:7.6rem;background-position:-19rem 0;}
+.pg_direct_info .carinfo-swiper .box .fm_hr + .fm_hr{margin-top:2rem;}
+.pg_direct_info .carinfo-swiper .box .form02_list.type02 .fm_hr .label{color:#707070;font-size:1.4rem;font-weight:400;line-height:2rem;}
+.pg_direct_info .carinfo-swiper .box .form02_list.type02 .fm_hr .row{margin-top:.4rem;}
+.pg_direct_info .carinfo-swiper .box .form02_list.type02 .fm_hr .row .txt_view{padding:0;}
+.pg_direct_info .newcar_link{margin-top:2rem;}
+.pg_direct_info .newcar_link a{display:block;position:relative;padding:2rem 2rem 1.9rem 7rem;background-color:#fff;border-radius:1.6rem;font-size:1.6rem;line-height:2.2rem;}
+.pg_direct_info .newcar_link a::after{content:'';position:absolute;left:1.8rem;top:50%;width:3.8rem;height:3.6rem;margin-top:-1.8rem;background-position:-29rem 0;}
+
+.pg_direct_inq .box{margin-top:1.2rem;}
+.pg_direct_inq .box::after{content:'';position:absolute;right:1.8rem;top:1.7rem;width:7.9rem;height:7.6rem;background-position:-19rem 0;}
+.pg_direct_inq .box .fm_hr{margin-top:.2rem;}
+.pg_direct_inq .box .fm_hr + .fm_hr{margin-top:1.6rem;}
+.pg_direct_inq .is_prd_list{margin-top:3.7rem;}
+
+.pg_direct_inq .box.box_new_info::after{content:'';position:absolute;right:1.7rem;top:1.6rem;width:7.7rem;height:7.7rem;background-position:-19rem -9rem;}
+
+.fm_radio_list.benefit li{width:50%;margin:0;}
+.fm_radio_list.benefit li:first-child{padding-right:.7rem;}
+.fm_radio_list.benefit li:last-child{padding-left:.7rem;}
+.fm_radio_list.benefit .radio label{display:block;height:7.4rem;padding-top:4.5rem;color:#101010;line-height:2.2rem;text-align:center;}
+.fm_radio_list.benefit .radio label::after{content:'';position:absolute;left:50%;top:1.3rem;width:2.6rem;height:2.6rem;margin-left:-1.3rem;}
+.fm_radio_list.benefit li:nth-of-type(1) .radio label::after{background-position:-45rem 0;}
+.fm_radio_list.benefit li:nth-of-type(2) .radio label::after{background-position:-50rem 0;}
+
+.fm_hr .driver_select{border:1px solid rgba(0,0,0,.2);border-radius:.8rem;}
+.fm_hr .driver_select p.tt{position:relative;padding:1.7rem 2rem 1.2rem 5rem;background-color:#F1F0EC;color:#707070;font-size:1.6rem;font-weight:700;line-height:2.2rem;}
+.fm_hr .driver_select .one p.tt{border-radius:.8rem .8rem 0 0;}
+.fm_hr .driver_select p.tt::after{content:'';position:absolute;left:1.9rem;top:1.3rem;width:2.6rem;height:2.6rem;}
+.fm_hr .driver_select .one p.tt::after{background-position:-55rem 0;}
+.fm_hr .driver_select .family p.tt::after{background-position:-60rem 0;}
+.fm_hr .driver_select .sel_list{padding:2.3rem 2.1rem 2.8rem;}
+.fm_hr .driver_select .sel_list .fm_hr{margin-top:0;}
+.fm_hr .driver_select .sel_list .fm_hr + .fm_hr{margin-top:3.2rem;}
+.fm_hr .driver_select .sel_list .radio label{font-size:1.6rem;line-height:2.2rem;}
+
+.pg_direct_new_3 .radio_round_list{margin-top:6rem;}
+
+.conts_page.pg_factfd_open{padding-top:2.8rem;}
+.pg_factfd_open .logo{width:32rem;height:5.3rem;margin-bottom:8rem;}
+.pg_factfd_open .logo img{width:100%;}
+.pg_factfd_open hr.line{margin-top:4rem;}
+.pg_factfd_open .form02_list{margin-top:4rem;}
+
+/* 선물하기 */
+.gift_view img{max-width:100%;}
+
+
+/* 보험금 청구 */
+.conts_page.pg_claim_4{margin-top:-7.8rem;padding-top:7.8rem;background-color:#fff;}
+.pg_claim_4 .attach_wrap{margin-top:2.2rem;}
+.pg_claim_4 .attach_wrap .attach{display:-webkit-box;display:-webkit-flex;display:flex;flex-wrap:wrap;margin:3rem -.7rem 0;}
+.pg_claim_4 .attach_wrap .attach li{width:33.33%;padding:.8rem .7rem;}
+.pg_claim_4 .attach_wrap .attach .photo{width:100%;height:11.4rem;border:1px solid #ccc;background-color:#F1F0EC;}
+.pg_claim_4 .attach_wrap .attach .photo img{width:100%;height:100%;object-fit:contain;}
+
+.pg_claim_fin .box_top_title{position:relative;margin-top:.3rem;padding:3.2rem 2rem;color:#fff;}
+.pg_claim_fin .box_top_title::after{content:'';position:absolute;right:2.6rem;top:3.9rem;width:4.8rem;height:4.8rem;background-position:-26rem -26rem;}
+.pg_claim_fin .step_claim{margin-top:2.2rem;padding:2rem 2rem 1rem;background-color:#F1F0EC;border-radius:1.6rem;}
+.pg_claim_fin .step_claim .step{margin-top:3rem;}
+.pg_claim_fin .step_claim .step li{position:relative;margin-bottom:2rem;padding-left:4.4rem;}
+.pg_claim_fin .step_claim .step .no{position:absolute;z-index:5;left:0;top:50%;width:3.2rem;height:3.2rem;margin-top:-1.6rem;padding-top:.2rem;border-radius:1.6rem;color:#fff;font-size:2rem;font-weight:700;line-height:3rem;text-align:center;}
+.pg_claim_fin .step_claim .step p{height:7rem;padding:.2rem 2.8rem;background-color:#fff;border-radius:3.5rem;font-size:1.6rem;line-height:6.8rem;}
+.pg_claim_fin .step_claim .step li .no::before, .pg_claim_fin .step_claim .step li .no::after{content:'';position:absolute;z-index:-1;left:1.5rem;width:1px;}
+.pg_claim_fin .step_claim .step li .no::before{top:-2rem;height:2rem;}
+.pg_claim_fin .step_claim .step li .no::after{bottom:-4rem;height:4rem;}
+.pg_claim_fin .step_claim .step li:first-child .no::before{display:none;}
+.pg_claim_fin .step_claim .step li:last-child .no::after{display:none;}
+.pg_claim_fin .bul_dot{color:#707070;font-weight:300;}
+
+.lay_sign_wrap .sign_write .sign_inner{display:-webkit-box;display:-webkit-flex;display:flex;width:100%;height:20rem;margin-top:3rem;color:#929292;font-size:3.2rem;line-height:4.2rem;text-align:center;justify-content:center;align-items:center;}
+
+
+
+
+
+

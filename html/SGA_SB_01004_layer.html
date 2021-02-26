@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>사용자 확인(SGA_SB_01004_layer)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <header class="header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title">Title</h1>
+    </header>
+
+    <section class="content">
+
+        <div style="padding:3rem;">
+
+            <button type="button" aria-haspopup="true" data-target="#layer1p" class="btn js_btnlayerpop">사용자 확인 1</button><br><br>
+            <button type="button" aria-haspopup="true" data-target="#layer2p" class="btn js_btnlayerpop">사용자 확인 2</button><br><br>
+            <button type="button" aria-haspopup="true" data-target="#layer3p" class="btn js_btnlayerpop">사용자 확인 3</button><br><br>
+
+        </div>
+        
+    </section>
+
+</div>
+
+<!-- layer popup -->
+<section class="layerpop_wrap alertpop" id="layer1p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">알림</h1>
+                </header>
+                <div class="layerpop_body">
+                    <p>입력하신 내용과 일치하는<br>사용자 정보가 없습니다.<br>사용자 정보를 다시 확인해주세요.</p>
+                </div>
+                <div class="layerpop_foot">
+                    <button type="button" class="btn_pop_alert js_close"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="layerpop_wrap alertpop" id="layer2p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">알림</h1>
+                </header>
+                <div class="layerpop_body">
+                    <p>인증번호를 다시 발송하였습니다.</p>
+                </div>
+                <div class="layerpop_foot">
+                    <button type="button" class="btn_pop_alert js_close"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="layerpop_wrap alertpop" id="layer3p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">알림</h1>
+                </header>
+                <div class="layerpop_body">
+                    <p>인증번호를 확인해주세요.</p>
+                </div>
+                <div class="layerpop_foot">
+                    <button type="button" class="btn_pop_alert js_close"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //layer popup -->
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>form</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css">
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+	<style>
+		body{padding:1.5rem;}
+		h2 span{display:block;margin:.5rem 0 1rem;font-size:1.4rem;font-weight:400;}
+	</style>	
+</head>
+
+<body>
+
+	<h2>input type 01</h2>
+	<div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+		<input type="text" id="" title="" placeholder="사용자명">
+	</div>
+
+	<br>
+
+	<h2>input type 02</h2>
+	<div class="input_wrap etc reinput"> <!-- reinput 초기화 클래스 -->
+		<input type="text" id="" title="" placeholder="사용자명">
+	</div>
+
+	<br>
+
+	<h2>input type 03 <span>높이 38px 토글 inner에 인풋이 들어갈 경우 사용</span></h2>
+	<div class="input_wrap s col reinput">
+		<input type="tel" maxlength="6" title="주민등록번호 앞자리">
+	</div>
+
+	<br><br>
+
+
+	<h2>날짜선택 type 01</h2>
+	<div class="date_select">
+		<input type="text" title="날짜 선택" class="form-control" data-toggle="datepicker" readonly>
+	</div>
+
+	<br><br>
+
+	<h2>날짜선택 type 02</h2>
+	<div class="form02_list">
+		<div class="fm_hr">
+			<strong class="label">생년월일</strong>
+			<div class="row">
+				<div class="date_select">
+					<input type="text"  placeholder="생년월일을 선택하세요" title="생년월일" class="form-control" data-toggle="datepicker" readonly>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<h2>select type 01</h2>
+	<div class="select_layer">
+		<button type="button" aria-haspopup="true" data-target="#select_layer" class="button_select js_btnlayerpop"><span>제조사를 선택해 주세요</span></button>
+	</div>
+
+	<br>
+
+	<h2>select type 02</h2>
+	<div class="form02_list">
+		<div class="fm_hr">
+			<strong class="label blind">제조사</strong>
+			<div class="row">
+				<div class="select_layer">
+					<button type="button" aria-haspopup="true" data-target="#select_layer" class="button_select js_btnlayerpop"><span>제조사를 선택해 주세요</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script type="text/javascript">
+$(function() {
+
+	$('[data-toggle="datepicker"]').datepicker();
+	
+});
+</script>
+</body>
+</html>

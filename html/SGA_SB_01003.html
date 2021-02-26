@@ -1,0 +1,140 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>회원등록(SGA_SB_01003)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+  <!-- 210224 : SGA_SB_01003, SGA_SB_01004 뒤로가기 버튼 추가 -->
+  <a href="#" class="go_history"><span class="blind">이전</span></a>
+  <!-- //210224 : SGA_SB_01003, SGA_SB_01004 뒤로가기 버튼 추가 -->
+	<section class="content">
+		
+        <div class="conts_page pg_agent">
+
+            <!-- top title -->
+            <div class="top_head img">
+                <h1 class="tit1"><strong>안녕하세요!</strong><br></h1>
+                <p class="txt">SmartGA 회원 등록을 위해<br>
+                    소속 보험대리점을 선택해주세요</p>
+            </div>
+
+            <div class="form_list">
+                <div class="select_layer"> <!-- 보험대리점 선택된 후 .on 클래스 추가 -->
+                    <button type="button" aria-haspopup="true" data-target="#select_layer" class="button_select js_btnlayerpop"><span>보험대리점 선택하기</span></button>
+                    <!-- 선택된 값 노출 -->
+                    <input type="text" readonly class="input_select" title="보험대리점">
+                </div>
+            </div>
+
+            <div class="bottom_foot">
+                <div class="togglemk">
+                    <a href="#toggle-qmark2" class="mkhead jstoggle" role="button" aria-expanded="false"><span class="txt">선택 목록에 소속 보험대리점이 없으신가요?</span><span class="blind">추가 설명 보기</span></a>
+                    <div id="toggle-qmark2" class="boxtogmk jstogglewrap" aria-hidden="true" tabindex="0">
+                        <div class="qmwrap">
+                            SmartGA는 주식회사 지넥슨이 제공하는<br>
+                            업무지원 시스템(ERP)의 모바일 서비스 입니다.<br>
+                            ㈜지넥슨과 제휴하지 않은 보험대리점은<br>
+                            해당 서비스를 사용하실 수 없습니다.
+                        </div>
+                        
+                        <button type="button" data-toggle-origin="toggle" class="cls"><span class="blind">추가 설명 닫기</span></button>
+                    </div>
+                </div>
+                <div class="btn_wrap strong">
+                    <button type="button" class="btn em disabled" disabled><span>사용자 정보 입력</span></button>
+                </div>
+            </div>
+
+        </div>
+
+	</section>
+
+</div>
+
+<!-- select layer popup -->
+<section class="layerpop_wrap bottom" id="select_layer" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">소속 보험대리점을 선택 하세요.</h1>
+                </header>
+                <div class="layerpop_body">
+                    <ul class="dropbox_tp1" role="listbox">
+                        <li><a href="javascript:;" role="option">DB MNS</a></li>
+                        <li><a href="javascript:;" role="option">DB금융서비스</a></li>
+                        <li><a href="javascript:;" role="option">ITX 마케팅</a></li>
+                        <li><a href="javascript:;" role="option">PBI컴퍼니</a></li>
+                        <li><a href="javascript:;" role="option">고려경영연구소(KAC)</a></li>
+                        <li><a href="javascript:;" role="option">골든A＆C</a></li>
+                        <li><a href="javascript:;" role="option">골든컴패스</a></li>
+                        <li><a href="javascript:;" role="option">글로벌자산관리</a></li>
+                        <li><a href="javascript:;" role="option">2 - DB MNS</a></li>
+                        <li><a href="javascript:;" role="option">2 - DB금융서비스</a></li>
+                        <li><a href="javascript:;" role="option">2 - ITX 마케팅</a></li>
+                        <li><a href="javascript:;" role="option">2 - PBI컴퍼니</a></li>
+                        <li><a href="javascript:;" role="option">2 - 고려경영연구소(KAC)</a></li>
+                        <li><a href="javascript:;" role="option">2 - 골든A＆C</a></li>
+                        <li><a href="javascript:;" role="option">2 - 골든컴패스</a></li>
+                        <li><a href="javascript:;" role="option">2 - 글로벌자산관리</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layerpop_close">
+                <button type="button" class="js_close"><span class="blind">팝업닫기</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script>
+	$(function(){
+		var dropboxOption =  function() {
+			return {
+				init: function() {
+					this.dropboxDisplay();
+				},
+				dropboxDisplay: function() {
+                    var $selectLayer = $('.select_layer');
+                    var $buttonState = $('.btn_wrap button');
+                    
+                    $(document)
+                        .off('click', '.dropbox_tp1 li a')
+                        .on('click', '.dropbox_tp1 li a' , function(e){
+                            var $text = $(this).text();
+                            $selectLayer.addClass('on').find('input').val($text);
+                            if($buttonState.prop('disabled')) $buttonState.attr('disabled', false).removeClass('disabled');
+                            $(this).parents('.layerpop_wrap').trigger('closePopup');
+					        e.preventDefault();
+                        })
+				}
+			}
+		}
+        dropboxOption().init();
+
+	});
+</script>
+</body>
+</html>

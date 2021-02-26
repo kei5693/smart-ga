@@ -1,0 +1,155 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>가입내역_상세목록_팩트파인더(SGA_SB_09007)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap_factfd">
+	
+    <!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">팩트파인더</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+		<div class="conts_page pg_factfd_det">
+            
+            <h2 class="spo_tit2_1"><strong class="strong">김기영</strong>님의<br>보험증권 분석 Report</h2>
+
+            <div class="jstab type02 link mt20">
+				<div class="tabinner">
+					<ul class="tabs" role="tab">
+						<li class="selected"><a href="#" role="tab" aria-selected="true" id="tabCon01">가입내역</a></li>
+						<li><a href="#" role="tab" aria-selected="false" id="tabCon02">보장분석</a></li>
+						<li><a href="#" role="tab" aria-selected="false" id="tabCon03">Report</a></li>
+					</ul>
+                </div>
+
+                <div class="panels">
+					<div id="tabCon01" tabindex="0" aria-labelledby="가입내역" role="tabpanel" class="panel selected">
+                        <div class="em_wrap">
+                            <p>
+                                <span class="tt">보유계약 <span class="desc">(생명 00 / 손해 00)</span></span>
+                                <strong class="number">
+                                    00
+                                    <span class="unit">건</span>
+                                </strong>
+                            </p>
+                            <p>
+                                <span class="tt">월납보험료</span>
+                                <strong class="number">
+                                    203,203,000
+                                    <span class="unit">원</span>
+                                </strong>
+                            </p>
+                        </div>
+
+                        <!-- filter -->
+                        <div class="filter scroll mt30">
+                            <ul class="radio_list">
+                                <li>
+                                    <div class="radio bgcolor check"> <!-- 210209_ui변경_(.bgcolor 클래스 추가) -->
+                                        <input type="radio" id="rad01" name="n_radio" checked="">
+                                        <label for="rad01">보유계약(피보험자)</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio bgcolor">
+                                        <input type="radio" id="rad02" name="n_radio">
+                                        <label for="rad02">보유계약(계약자)</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio bgcolor">
+                                        <input type="radio" id="rad03" name="n_radio">
+                                        <label for="rad03">미유지 계약</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- list -->
+                        <div class="contract_list">
+                            <ul class="list">
+                                <li>
+                                    <a href="javascript:;" class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>/ 20년</span>
+                                        </strong>
+                                        <span class="number">월 203,203,000 원</span>
+                                        <p class="logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></p>
+                                        <p class="type">KB 간편건강보험과 건강하게 사는 이야기 (20.10)</p>
+                                        <div class="name_wrap">
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">피보험자</span><span>김기영</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>/ 20년</span>
+                                        </strong>
+                                        <span class="number">월 53,000 원</span>
+                                        <p class="logo"><img src="../images/temp_logo_brand_02.png" alt="H현대해상화재보험"></p>
+                                        <p class="type">뉴하이카운전자상해보험(Hi2011)</p>
+                                        <div class="name_wrap">
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">피보험자</span><span>김기영</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>/ 20년</span>
+                                        </strong>
+                                        <span class="number">월 530,000 원</span>
+                                        <p class="logo"><img src="../images/temp_logo_brand_03.png" alt="삼성화재"></p>
+                                        <p class="type">무배당 삼성화재 재물보험 성공예감(2011.7)</p>
+                                        <div class="name_wrap">
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">피보험자</span><span>김기영</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+ 
+</body>
+</html>

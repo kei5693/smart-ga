@@ -1,0 +1,245 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>확인서생성_상세상품선택(SGA_SB_07004)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap_smart"> <!-- 210122_ui변경_스마트확인서일 경우 .wrap_smart 클래스 추가  -->
+		
+	<!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">스마트 확인서</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+		<div class="conts_page pg_sm_create_2">
+            
+            <h2 class="spo_tit2"><strong>어떤 상품을 청약하셨나요?</strong></h2>
+
+            <!-- 생명보험 선택 시 case -->
+            <ul class="radio_insur_list life_general">
+                <li class="item_1">
+                    <div class="radio bgcolor"> <!-- 210122_ui변경_(.bgcolor 클래스 추가) -->
+                        <input type="radio" id="rad_loss_1" name="n_loss">
+                        <label for="rad_loss_1">여행자 보험</label>
+                    </div>
+                </li>
+                <li class="item_2">
+                    <div class="radio bgcolor">
+                        <input type="radio" id="rad_loss_2" name="n_loss">
+                        <label for="rad_loss_2">화재 보험</label>
+                    </div>
+                </li>
+                <li class="item_3">
+                    <div class="radio bgcolor">
+                        <input type="radio" id="rad_loss_3" name="n_loss">
+                        <label for="rad_loss_3">배상책임 보험</label>
+                    </div>
+                </li>
+                <li class="item_4">
+                    <div class="radio bgcolor">
+                        <input type="radio" id="rad_loss_4" name="n_loss">
+                        <label for="rad_loss_4">기타 일반 보험</label>
+                    </div>
+                </li>
+            </ul>
+            <!-- //생명보험 선택 시 case -->
+
+            <!-- 손해보험 선택 시 case -->
+            <div class="radio_tab">
+                <ul class="radio_list">
+                    <li>
+                        <div class="radio bgcolor"> <!-- 210209_ui변경_(.bgcolor 클래스 추가) -->
+                            <input type="radio" id="mid_rad01" name="n_mid_radio">
+                            <label for="mid_rad01">장기보험</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor">
+                            <input type="radio" id="mid_rad02" name="n_mid_radio">
+                            <label for="mid_rad02">자동차보험</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor">
+                            <input type="radio" id="mid_rad03" name="n_mid_radio">
+                            <label for="mid_rad03">일반보험</label>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="panels">
+                    <!-- 장기보험 -->
+                    <div id="tabCon01" aria-labelledby="장기보험" role="tabpanel" class="panel">
+                        <ul class="radio_insur_list loss_long">
+                            <li class="item_1">
+                                <div class="radio bgcolor"> <!-- 210122_ui변경_(.bgcolor 클래스 추가) -->
+                                    <input type="radio" id="rad_loss_long_1" name="n_loss_long">
+                                    <label for="rad_loss_long_1">저축성 보험</label>
+                                </div>
+                            </li>
+                            <li class="item_2">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_long_2" name="n_loss_long">
+                                    <label for="rad_loss_long_2">종합 보험</label>
+                                </div>
+                            </li>
+                            <li class="item_3">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_long_3" name="n_loss_long">
+                                    <label for="rad_loss_long_3">질병/암 보험</label>
+                                </div>
+                            </li>
+                            <li class="item_4">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_long_4" name="n_loss_long">
+                                    <label for="rad_loss_long_4">실손 보험</label>
+                                </div>
+                            </li>
+                            <li class="item_5">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_long_5" name="n_loss_long">
+                                    <label for="rad_loss_long_5">운전자 보험</label>
+                                </div>
+                            </li>
+                            <li class="item_6">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_long_6" name="n_loss_long">
+                                    <label for="rad_loss_long_6">어린이 보험</label>
+                                </div>
+                            </li>
+                            <li class="item_7">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_long_7" name="n_loss_long">
+                                    <label for="rad_loss_long_7">상해 보험</label>
+                                </div>
+                            </li>
+                            <li class="item_8">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_long_8" name="n_loss_long">
+                                    <label for="rad_loss_long_8">기타 손해 보험</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 자동차 보험 -->
+                    <div id="tabCon02" aria-labelledby="자동차 보험" role="tabpanel" class="panel">
+
+                        <span class="blind">상세 상품군 없음</span>
+
+                    </div>
+
+                    <!-- 일반 보험 -->
+                    <div id="tabCon02" aria-labelledby="일반 보험" role="tabpanel" class="panel">
+                        <ul class="radio_insur_list loss_general">
+                            <li class="item_1">
+                                <div class="radio bgcolor"> <!-- 210122_ui변경_(.bgcolor 클래스 추가) -->
+                                    <input type="radio" id="rad_loss_general_1" name="n_loss_general">
+                                    <label for="rad_loss_general_1">여행자 보험</label>
+                                </div>
+                            </li>
+                            <li class="item_2">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_general_2" name="n_loss_general">
+                                    <label for="rad_loss_general_2">화재 보험</label>
+                                </div>
+                            </li>
+                            <li class="item_3">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_general_3" name="n_loss_general">
+                                    <label for="rad_loss_general_3">배상책임 보험</label>
+                                </div>
+                            </li>
+                            <li class="item_4">
+                                <div class="radio bgcolor">
+                                    <input type="radio" id="rad_loss_general_4" name="n_loss_general">
+                                    <label for="rad_loss_general_4">기타 일반 보험</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //손해보험 선택 시 case -->
+            
+            
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em disabled" disabled><span>다음</span></button>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script>
+	$(function(){
+		var radioTab =  function() {
+			return {
+				init: function() {
+					this.radioTabView();
+				},
+				radioTabView: function() {
+                    var $buttonState = $('.conts_page>.btn_wrap>button');
+                    
+					$(document)
+                        .off('click', '.radio_tab .radio_list>li')
+                        .on('click', '.radio_tab .radio_list>li' , function(){
+							var $current = $(this);
+                            var index = $current.index();
+                            var $panels = $current.parent().siblings('.panels');
+                            $current.addClass('selected');
+                            $current.siblings().removeClass('selected');
+
+                            var $target = $panels.find('>.panel:eq(' + index + ')');
+                            $target.addClass('selected').attr('tabindex', 0).siblings().removeClass('selected').removeAttr('tabindex').find('.radio').removeClass('check');
+                            
+                            if(index === 1){
+                                if($buttonState.prop('disabled')) $buttonState.attr('disabled', false).removeClass('disabled');
+                            }else{
+                                if(!($buttonState.prop('disabled'))) $buttonState.attr('disabled', true).addClass('disabled');
+                            }
+                    })
+                        
+                    $(document)
+                        .off('click', '.radio_insur_list li input:radio')
+                        .on('click', '.radio_insur_list li input:radio' , function(){
+                            if($buttonState.prop('disabled')) $buttonState.attr('disabled', false).removeClass('disabled');
+                    })
+
+				}
+			}
+		}
+        radioTab().init();
+
+	});
+</script>
+</body>
+</html>

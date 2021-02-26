@@ -1,0 +1,169 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>tab</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css">
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+	<style>
+		body{padding:1.5rem;}
+	</style>    
+</head>
+
+<body>
+    <h2>Link (페이지 이동시 사용)</h2>
+    
+    <div class="jstab type01 link"> <!-- 페이지 이동시 사용시 .link 클래스 추가 -->
+        <div class="tabinner">
+            <ul class="tabs" role="tab">
+                <li class="selected"><a href="#" role="tab" aria-selected="true" id="tabCon01">탭title01</a></li>
+                <li><a href="#" role="tab" aria-selected="false" id="tabCon02">탭title02</a></li>
+                <li><a href="#" role="tab" aria-selected="false" id="tabCon03">탭title03</a></li>
+            </ul>
+        </div>
+    
+        <div class="panels">
+            <div id="tabCon01" tabindex="0" aria-labelledby="탭title01" role="tabpanel" class="panel selected">
+                탭title01 content
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="mt80">type01</h2>
+    
+    <div class="jstab type01">
+        <div class="tabinner">
+            <ul class="tabs" role="tab">
+                <li class="selected"><a href="javascript:;" role="tab" aria-selected="true" id="tabCon01">탭title01</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon02">탭title02</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon03">탭title03</a></li>
+            </ul>
+        </div>
+    
+        <div class="panels">
+            <div id="tabCon01" tabindex="0" aria-labelledby="탭title01" role="tabpanel" class="panel selected">
+                탭title01 content
+            </div>
+            <div id="tabCon02" aria-labelledby="탭title02" role="tabpanel" class="panel">
+                탭title02 content
+            </div>
+            <div id="tabCon03" aria-labelledby="탭title03" role="tabpanel" class="panel">
+                탭title03 content
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mt80">type02</h2>
+    
+    <div class="jstab type02">
+        <div class="tabinner">
+            <ul class="tabs" role="tab">
+                <li class="selected"><a href="javascript:;" role="tab" aria-selected="true" id="tabCon01">보험사 코드</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon02">보증보험</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon03">기타담보</a></li>
+            </ul>
+        </div>
+    
+        <div class="panels">
+            <div id="tabCon01" tabindex="0" aria-labelledby="보험사 코드" role="tabpanel" class="panel selected">
+                보험사 코드
+            </div>
+            <div id="tabCon02" aria-labelledby="보증보험" role="tabpanel" class="panel">
+                보증보험
+            </div>
+            <div id="tabCon03" aria-labelledby="기타담보" role="tabpanel" class="panel">
+                기타담보
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mt80">type03</h2>
+    
+    <div class="jstab type03">
+        <div class="tabinner">
+            <ul class="tabs" role="tab">
+                <li class="selected"><a href="javascript:;" role="tab" aria-selected="true" id="tabCon01">생명보험</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon02">손해보험</a></li>
+            </ul>
+        </div>
+    
+        <div class="panels">
+            <div id="tabCon01" tabindex="0" aria-labelledby="생명보험" role="tabpanel" class="panel selected">
+                생명보험 contents
+            </div>
+            <div id="tabCon02" aria-labelledby="손해보험" role="tabpanel" class="panel">
+                손해보험 contents
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mt80">scroll</h2>
+    
+    <div class="jstab type03">
+        <div class="tabinner scroll_tab">
+            <ul class="tabs" role="tab">
+                <li class="selected"><a href="javascript:;" role="tab" aria-selected="true" id="tabCon01">TAB Title 1</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon02">TAB Title 2</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon03">TAB Title 3</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon04">TAB Title 4</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon05">TAB Title 5</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon06">TAB Title 6</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon07">TAB Title 7</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon08">TAB Title 8</a></li>
+                <li><a href="javascript:;" role="tab" aria-selected="false" id="tabCon09">TAB Title 9</a></li>
+            </ul>
+        </div>
+    
+        <div class="panels">
+            <div id="tabCon01" tabindex="0" aria-labelledby="TAB Title 1" role="tabpanel" class="panel selected">
+                TAB Title 1 contents
+            </div>
+            <div id="tabCon02" aria-labelledby="TAB Title 2" role="tabpanel" class="panel">
+                TAB Title 2 contents
+            </div>
+            <div id="tabCon03" aria-labelledby="TAB Title 3" role="tabpanel" class="panel">
+                TAB Title 3 contents
+            </div>
+            <div id="tabCon04" aria-labelledby="TAB Title 4" role="tabpanel" class="panel">
+                TAB Title 4 contents
+            </div>
+            <div id="tabCon05" aria-labelledby="TAB Title 5" role="tabpanel" class="panel">
+                TAB Title 5 contents
+            </div>
+            <div id="tabCon06" aria-labelledby="TAB Title 6" role="tabpanel" class="panel">
+                TAB Title 6 contents
+            </div>
+            <div id="tabCon07" aria-labelledby="TAB Title 7" role="tabpanel" class="panel">
+                TAB Title 7 contents
+            </div>
+            <div id="tabCon08" aria-labelledby="TAB Title 8" role="tabpanel" class="panel">
+                TAB Title 8 contents
+            </div>
+            <div id="tabCon09" aria-labelledby="TAB Title 9" role="tabpanel" class="panel">
+                TAB Title 9 contents
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br><br>
+
+	<script type="text/javascript" src="../js/common-ui.js"></script>
+</body>
+</html>

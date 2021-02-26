@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>layer popup</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css">
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <header class="header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title">Title</h1>
+    </header>
+
+	<section class="content">
+
+        <div>
+
+            <div class="btn_wrap">
+                <a href="#layer1p" aria-haspopup="true" class="btn js_btnlayerpop">&lt;A&gt; : full popup (TBD)</a>
+                <button type="button" aria-haspopup="true" data-target="#layer1p" class="btn js_btnlayerpop">&lt;Button&gt; : full popup (TBD)</button>
+            </div>
+
+            <div class="btn_wrap">
+                <a href="#layer2p" aria-haspopup="true" class="btn js_btnlayerpop">&lt;A&gt; : alert popup</a>
+                <button type="button" aria-haspopup="true" data-target="#layer2-2p" class="btn js_btnlayerpop">&lt;Button&gt; : alert popup</button>
+            </div>
+            
+
+            <div class="btn_wrap">
+                <a href="#layer3p" aria-haspopup="true" class="btn js_btnlayerpop">&lt;A&gt; : slide popup</a>
+                <button type="button" aria-haspopup="true" data-target="#layer3p" class="btn js_btnlayerpop">&lt;Button&gt; : slide popup</button>
+            </div>
+            
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- layer popup -->
+<section class="layerpop_wrap full" id="layer1p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">팝업 타이틀</h1>
+                </header>
+                <div class="layerpop_body">
+    
+                </div>
+                <div class="layerpop_foot">
+                    <div class="btn_wrap strong">
+                        <button type="button" class="btn"><span>버튼 강조(button)</span></button>
+                        <a href="#" class="btn js_close"><span>버튼 강조(a)</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="layerpop_close">
+                <button type="button" class="js_close"><span class="blind">팝업닫기</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="layerpop_wrap alertpop" id="layer2p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">알림</h1>
+                </header>
+                <div class="layerpop_body">
+                    <p>입력하신 내용과 일치하는<br>사용자 정보가 없습니다.<br>사용자 정보를 다시 확인해주세요.</p>
+                </div>
+                <div class="layerpop_foot">
+                    <button type="button" class="btn_pop_alert js_close"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="layerpop_wrap alertpop" id="layer2-2p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">알림</h1>
+                </header>
+                <div class="layerpop_body">
+                    <p>일정을 삭제하시겠습니까?</p>
+                </div>
+                <div class="layerpop_foot">
+                    <button type="button" class="btn_pop_alert gray js_close"><span>취소</span></button>
+                    <button type="button" class="btn_pop_alert"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="layerpop_wrap bottom" id="layer3p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">소속 보험대리점을 선택 하세요.</h1>
+                </header>
+                <div class="layerpop_body">
+                    <ul class="dropbox_tp1" role="listbox">
+                        <li><a href="javascript:;" role="option">DB MNS</a></li>
+                        <li><a href="javascript:;" role="option">DB금융서비스</a></li>
+                        <li><a href="javascript:;" role="option">ITX 마케팅</a></li>
+                        <li><a href="javascript:;" role="option">PBI컴퍼니</a></li>
+                        <li><a href="javascript:;" role="option">고려경영연구소(KAC)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layerpop_close">
+                <button type="button" class="js_close"><span class="blind">팝업닫기</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //layer popup -->
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+</body>
+</html>

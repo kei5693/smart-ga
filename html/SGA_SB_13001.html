@@ -1,0 +1,153 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>보험금청구(SGA_SB_13001)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css">
+	<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap_claim">
+
+    <header class="header subm app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">다청구</span></h1>
+    </header>
+
+	<section class="content">
+		<div class="conts_page pg_claim">
+
+            <div class="app_subminfo_box">
+                <h2 class="spo_tit2">고객님의<br>보험금 청구서 작성을<br>도와주세요!</h2>
+            </div>
+
+            <!-- 고객명 검색 -->
+            <div class="scr_wrap mt40">
+                <input type="text" placeholder="고객명을 검색하세요." title="고객명 검색">
+                <button type="button" class="btn s"><span>검색</span></button>
+            </div>
+            <div class="list_bul mt15">
+                <p class="bul_mark">ⓘ 간편 보험금 청구는 [개인] 고객만 사용하실 수 있습니다.</p>
+            </div>
+
+            <div class="csmge_list round">
+                <ul>
+                    <li>
+                        <div class="radio bgcolor csmge_sumup">
+                            <input type="radio" id="rad_csname_1" name="n_csname">
+                            <label for="rad_csname_1">
+                                <span class="left">
+                                    <strong class="eps">정예린정예린정예린정예린</strong>
+                                    <span class="stats suc">계약</span> <!-- 계약( .suc ), 가망( .chance ) 클래스 추가  -->
+                                </span>
+                                <span class="right">
+                                    <span class="p">
+                                        <span>생일</span>
+                                        <span class="ls0">1996-09-19(양)</span>
+                                    </span>
+                                    <span class="p">
+                                        <span>상령일</span>
+                                        <span class="ls0">2021-02-19</span>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor csmge_sumup">
+                            <input type="radio" id="rad_csname_2" name="n_csname">
+                            <label for="rad_csname_2">
+                                <span class="left">
+                                    <strong class="eps">정예린</strong>
+                                    <span class="stats chance">가망</span>
+                                </span>
+                                <span class="right">
+                                    <span class="p">
+                                        <span>생일</span>
+                                        <span class="ls0">1996-09-19(양)</span>
+                                    </span>
+                                    <span class="p">
+                                        <span>상령일</span>
+                                        <span class="ls0">2021-02-19</span>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="radio bgcolor csmge_sumup">
+                            <input type="radio" id="rad_csname_3" name="n_csname">
+                            <label for="rad_csname_3">
+                                <span class="left">
+                                    <strong class="eps">정예린</strong>
+                                    <span class="stats chance">가망</span>
+                                </span>
+                                <span class="right">
+                                    <span class="p">
+                                        <span>생일</span>
+                                        <span class="ls0">1996-09-19(양)</span>
+                                    </span>
+                                    <span class="p">
+                                        <span>상령일</span>
+                                        <span class="ls0">2021-02-19</span>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em disabled" disabled><span>다음</span></button>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script>
+	$(function(){
+		var radioTab =  function() {
+			return {
+				init: function() {
+					this.radioTabView();
+				},
+				radioTabView: function() {
+                    var $buttonState = $('.conts_page>.btn_wrap>button');
+                     
+                    $(document)
+                        .off('click', '.csmge_list li input:radio')
+                        .on('click', '.csmge_list li input:radio' , function(){
+                            if($buttonState.prop('disabled')) $buttonState.attr('disabled', false).removeClass('disabled');
+                    })
+
+				}
+			}
+		}
+        radioTab().init();
+
+	});
+</script>
+</body>
+</html>

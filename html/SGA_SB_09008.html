@@ -1,0 +1,245 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>보장분석_상세목록_팩트파인더(SGA_SB_09009)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap_factfd">
+	
+    <!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">팩트파인더</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+		<div class="conts_page pg_factfd_det">
+            
+            <h2 class="spo_tit2_1"><strong class="strong">김기영</strong>님의<br>보험증권 분석 Report</h2>
+
+            <div class="jstab type02 link mt20">
+				<div class="tabinner">
+					<ul class="tabs" role="tab">
+						<li><a href="#" role="tab" aria-selected="false" id="tabCon01">가입내역</a></li>
+						<li class="selected"><a href="#" role="tab" aria-selected="true" id="tabCon02">보장분석</a></li>
+						<li><a href="#" role="tab" aria-selected="false" id="tabCon03">Report</a></li>
+					</ul>
+                </div>
+
+                <div class="panels">
+					<div id="tabCon02" tabindex="0" aria-labelledby="Report" role="tabpanel" class="panel selected">
+                        
+                        <div class="factfd_rate">
+                            <h3 class="spo_tit2">보장금액 대비 위험 준비율</h3>
+
+                            <div class="total_wrap">
+                                <!-- bar graph -->
+                                <div class="graph_bar">
+                                    <div class="cate low"> <!-- 0% .zero 클래스, 50% 미만 .low 클래스, 50% 초과 .mid 클래스, 100% 이상 .high 클래스 추가 -->
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:40%;"><span class="num_txt">0%</span></span> </div>
+                                            <span class="pos target">권장</span>
+                                            <span class="pos start">0%</span>
+                                            <span class="pos mid">50%</span>
+                                            <span class="pos end">100%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="spo_tit2">보장항목 별 준비율</h3>
+
+                            <!-- 범주 -->
+                            <div class="rate_cate">
+                                <div class="flex cate">
+                                    <div class="cate1">
+                                        0%
+                                        <strong class="number">10 <span class="unit">개</span></strong>
+                                    </div>
+                                    <div class="cate2">
+                                        50% 미만
+                                        <strong class="number">4 <span class="unit">개</span></strong>
+                                    </div>
+                                    <div class="cate3">
+                                        50% 초과
+                                        <strong class="number">3 <span class="unit">개</span></strong>
+                                    </div>
+                                    <div class="cate4">
+                                        100% 이상
+                                        <strong class="number">2 <span class="unit">개</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 보장항목 상세 내역 -->
+                            <div class="list_rate">
+                                <!-- bar graph -->
+                                <div class="graph_bar">
+                                    <div class="cate low"> <!-- 0% .zero 클래스, 50% 미만 .low 클래스, 50% 초과 .mid 클래스, 100% 이상 .high 클래스 추가 -->
+                                        <div class="label">사망</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:40%;"></span></div>
+                                            <span class="pos start">1억</span> <!-- 보유 보장금액 최소 -->
+                                            <span class="pos end">3억</span> <!-- 보유 보장금액 최대 -->
+                                        </div> 
+                                        <div class="rate_tag">40%</div>
+                                    </div>
+                                    <div class="cate mid">
+                                        <div class="label">장해</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:60%;"></span></div>
+                                            <span class="pos start">1억 5천만</span>
+                                            <span class="pos end">2억</span>
+                                        </div>
+                                        <div class="rate_tag">60%</div>
+                                    </div>
+                                    <div class="cate high">
+                                        <div class="label">암진단</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:100%;"></span></div>
+                                            <span class="pos start">8천만</span>
+                                            <span class="pos end">8천만</span>
+                                        </div>
+                                        <div class="rate_tag">60%</div>
+                                    </div>
+                                    <div class="cate zero">
+                                        <div class="label">뇌혈관 진단</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:0%;"></span></div>
+                                            <span class="pos start">0</span>
+                                            <span class="pos end">4천 500만</span>
+                                        </div>
+                                        <div class="rate_tag">0%</div>
+                                    </div>
+                                    <div class="cate low">
+                                        <div class="label">심혈관진단</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:30%;"></span></div>
+                                            <span class="pos start">1억</span>
+                                            <span class="pos end">3억</span>
+                                        </div> 
+                                        <div class="rate_tag">30%</div>
+                                    </div>
+                                    <div class="cate mid">
+                                        <div class="label">수술비</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:70%;"></span></div>
+                                            <span class="pos start">1억 5천만</span>
+                                            <span class="pos end">2억</span>
+                                        </div>
+                                        <div class="rate_tag">70%</div>
+                                    </div>
+                                    <div class="cate high">
+                                        <div class="label">입원비</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:100%;"></span></div>
+                                            <span class="pos start">8천만</span>
+                                            <span class="pos end">8천만</span>
+                                        </div>
+                                        <div class="rate_tag">100%</div>
+                                    </div>
+                                    <div class="cate zero">
+                                        <div class="label">치매</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:0%;"></span></div>
+                                            <span class="pos start">0</span>
+                                            <span class="pos end">4천 500만</span>
+                                        </div>
+                                        <div class="rate_tag">0%</div>
+                                    </div>
+                                    <div class="cate zero">
+                                        <div class="label">간병자금</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:00%;"></span></div>
+                                            <span class="pos start">1억 5천만</span>
+                                            <span class="pos end">2억</span>
+                                        </div>
+                                        <div class="rate_tag">0%</div>
+                                    </div>
+                                    <div class="cate mid">
+                                        <div class="label">치과보장</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:80%;"></span></div>
+                                            <span class="pos start">8천만</span>
+                                            <span class="pos end">8천만</span>
+                                        </div>
+                                        <div class="rate_tag">80%</div>
+                                    </div>
+                                    <div class="cate zero">
+                                        <div class="label">운전자보험</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:0%;"></span></div>
+                                            <span class="pos start">0</span>
+                                            <span class="pos end">4천 500만</span>
+                                        </div>
+                                        <div class="rate_tag">0%</div>
+                                    </div>
+                                    <div class="cate low">
+                                        <div class="label">화재손해</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:40%;"></span></div>
+                                            <span class="pos start">1억</span>
+                                            <span class="pos end">3억</span>
+                                        </div> 
+                                        <div class="rate_tag">40%</div>
+                                    </div>
+                                    <div class="cate zero">
+                                        <div class="label">실손의료<br>(입원)</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:0%;"></span></div>
+                                            <span class="pos start">0</span>
+                                            <span class="pos end">4천 500만</span>
+                                        </div>
+                                        <div class="rate_tag">0%</div>
+                                    </div>
+                                    <div class="cate zero">
+                                        <div class="label">실손의료<br>(통원)</div>
+                                        <div class="bar_wrap">
+                                            <div class="bar_inner"><span class="bar" style="width:0%;"></span></div>
+                                            <span class="pos start">0</span>
+                                            <span class="pos end">4천 500만</span>
+                                        </div>
+                                        <div class="rate_tag">0%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //보장항목 상세 내역 -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+
+</body>
+</html>

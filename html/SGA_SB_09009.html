@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>Report/연락처확인layer_상세목록_팩트파인더(SGA_SB_09009)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap_factfd">
+	
+    <!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">팩트파인더</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+		<div class="conts_page pg_factfd_det">
+            
+            <h2 class="spo_tit2_1"><strong class="strong">김기영</strong>님의<br>보험증권 분석 Report</h2>
+
+            <div class="jstab type02 link mt20">
+				<div class="tabinner">
+					<ul class="tabs" role="tab">
+						<li><a href="#" role="tab" aria-selected="false" id="tabCon01">가입내역</a></li>
+						<li><a href="#" role="tab" aria-selected="false" id="tabCon02">보장분석</a></li>
+						<li class="selected"><a href="#" role="tab" aria-selected="true" id="tabCon03">Report</a></li>
+					</ul>
+                </div>
+
+                <div class="panels">
+					<div id="tabCon03" tabindex="0" aria-labelledby="Report" role="tabpanel" class="panel selected">
+                        
+                        <h3 class="spo_tit2 mt30">증권분석 보고서 전송</h3>
+
+                        <div class="btn_wrap mt20">
+                            <!-- link -->
+                            <a href="#layer1p" class="ico_btn ico_sms js_btnlayerpop" aria-haspopup="true">
+                                <strong>문자메시지</strong>
+                            </a>
+                            <!-- link -->
+                            <a href="javascript:;" class="ico_btn ico_kakao">
+                                <strong>카카오톡</strong>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+<!-- toast -->
+<div id="toast"></div>
+
+<!-- layer popup -->
+<section class="layerpop_wrap alertpop" id="layer1p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">SMS 발송</h1>
+                </header>
+                <div class="layerpop_body">
+                    <div class="lay_sms_send">
+                        <strong class="spo_tit2">증권분석 보고서를<br>문자메시지로 전송합니다.</strong>
+                        <p class="txt14 mt10">연락처를 다시한번 확인해주세요.</p>
+
+                        <!-- form list -->
+                        <div class="form02_list mt30">
+                            <div class="fm_hr">
+                                <strong class="label">고객명</strong>
+                                <div class="row">
+                                    <div class="input_wrap readonly">
+                                        <input type="text" value="유정연" readonly title="고객명">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm_hr">
+                                <strong class="label">연락처</strong>
+                                <div class="row">
+                                    <div class="input_wrap">
+                                        <input type="tel" value="01012345678"  maxlength="11" title="연락처" placeholder="- 없이 숫자만 입력하세요.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layerpop_foot">
+                    <button type="button" class="btn_pop_alert gray js_close"><span>취소</span></button>
+                    <button type="button" class="btn_pop_alert"><span>전송</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //layer popup -->
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script type="text/javascript">
+    $(function() {
+        //  정보제공동의팝업, 정보제공동의 클릭 시 콜백함수 호출
+        $('#layer1p').on('click', '.layerpop_foot .btn_pop_alert:nth-of-type(2)', function() { 
+            alert('증권분석 보고서 SMS를 발송');
+    
+            $(this).parents('.layerpop_wrap').trigger('closePopup');
+            smartGA.mobile.toast('증권분석 보고서 SMS를 발송하였습니다.');
+    
+            return false; 
+        });
+    });
+</script>
+</body>
+</html>

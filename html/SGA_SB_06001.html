@@ -1,0 +1,134 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>본사 게시판/게시판 검색(SGA_SB_06001)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+
+<div id="wrap">
+		
+	<header class="header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title">본사 게시판</h1>
+    </header>
+
+	<section class="content">
+		<div class="conts_page pg_hboard">
+
+            <div class="select_layer">
+                <button type="button" aria-haspopup="true" data-target="#select_layer" class="button_select js_btnlayerpop"><span>전체 게시판</span></button>
+            </div>
+            
+            <!-- 게시글 검색 -->
+            <div class="scr_wrap">
+                <input type="text" placeholder="게시글 제목을 검색하세요." title="게시글 제목 검색">
+                <button type="button" class="btn s"><span>검색</span></button> <!-- 210125 수정 -->
+            </div>
+
+            <div class="board_list">
+                <ul>
+                    <li>
+                        <a href="javascript:;" class="link">
+                            <strong class="spo_tit4">삼성생명 11월 GA소식지</strong>
+                            <p class="txt_cate">[생명보험] 1277</p>
+                            <p class="txt_date">2020-10-28 17:58:12</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="link">
+                            <strong class="spo_tit4">푸르덴셜생명 11월 상품자료</strong>
+                            <p class="txt_cate">[생명보험] 1276</p>
+                            <p class="txt_date">2020-10-28 17:58:12</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="link">
+                            <strong class="spo_tit4">금융감독원 검사방향 및 당부사항(준법감시인협의체)</strong>
+                            <p class="txt_cate">[준법감시업무] 1274</p>
+                            <p class="txt_date">2020-10-28 17:58:12</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="link">
+                            <strong class="spo_tit4">자회사형 GA 운영현황</strong>
+                            <p class="txt_cate">[계약/보전업무]</p>
+                            <p class="txt_date">2020-10-28 17:58:12</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="link">
+                            <strong class="spo_tit4">보험회사 비용관리</strong>
+                            <p class="txt_cate">[계약/보전업무]</p>
+                            <p class="txt_date">2020-10-28 17:58:12</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<!-- select layer popup -->
+<section class="layerpop_wrap bottom" id="select_layer" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">게시판 선택</h1>
+                </header>
+                <div class="layerpop_body">
+                    <ul class="dropbox_tp1" role="listbox">
+                        <li><a href="javascript:;" role="option">전체게시판</a></li>
+                        <li><a href="javascript:;" role="option">인사업무</a></li>
+                        <li><a href="javascript:;" role="option">계약/보전업무</a></li>
+                        <li><a href="javascript:;" role="option">준법관련 업무</a></li>
+                        <li><a href="javascript:;" role="option">생명보험</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layerpop_close">
+                <button type="button" class="js_close"><span class="blind">팝업닫기</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script type="text/javascript">
+$(function() {
+    // 삭제하기 팝업, 삭제 클릭 시 콜백함수 호출
+    $('#select_layer').on('click', '.dropbox_tp1 li a', function() { 
+        alert('게시판 선택');
+
+        $(this).parents('.layerpop_wrap').trigger('closePopup');
+
+        return false; 
+    });
+});
+</script>
+</body>
+</html>

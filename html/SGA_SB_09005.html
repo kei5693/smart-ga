@@ -1,0 +1,245 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>회원가입_팩트파인더(SGA_SB_09005)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap_factfd">
+	
+    <!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">팩트파인더</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+		<div class="conts_page pg_factfd_reg">
+            
+            <h2 class="spo_tit2">한국신용정보원 회원가입</h2>
+
+            <div class="list_bul mt20">
+                <p class="bul_dot">· 한국신용정보원 회원가입을 위해<br>이메일 인증과 휴대전화 본인인증을 진행합니다.</p>
+            </div>
+
+            <!-- 약관동의 -->
+            <div class="all_agr_wrap mt30">
+                <div class="all">
+                    <div class="checkbox icon bgcolor">
+                        <input type="checkbox" id="agr_chk_all" name="agr_chk">
+                        <label for="agr_chk_all">필수약관 전체 동의</label>
+                    </div>
+                </div>
+                <div class="agr_list">
+                    <ul class="list">
+                        <li>
+                            <div class="checkbox icon">
+                                <input type="checkbox" id="agr_chk_1" name="agr_chk" aria-haspopup="true" data-target="#layer1p" class="js_btnlayerpop">
+                                <label for="agr_chk_1">한국신용정보원 이용약관</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox icon">
+                                <input type="checkbox" id="agr_chk_2" name="agr_chk">
+                                <label for="agr_chk_2">개인(신용)정보의 수집, 이용에 대한 안내</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox icon">
+                                <input type="checkbox" id="agr_chk_3" name="agr_chk">
+                                <label for="agr_chk_3">개인식별정보 수집, 이용에 대한 동의 안내</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox icon">
+                                <input type="checkbox" id="agr_chk_4" name="agr_chk">
+                                <label for="agr_chk_4">개인정보이용동의</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox icon">
+                                <input type="checkbox" id="agr_chk_5" name="agr_chk">
+                                <label for="agr_chk_5">서비스이용약관동의</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox icon">
+                                <input type="checkbox" id="agr_chk_6" name="agr_chk">
+                                <label for="agr_chk_6">고유식별정보처리 동의</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checkbox icon">
+                                <input type="checkbox" id="agr_chk_7" name="agr_chk">
+                                <label for="agr_chk_7">통신사이용약관 동의</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="line"> <!-- 구분선 -->
+
+            <h2 class="spo_tit2">계정정보</h2>
+            <div class="form02_list">
+                <div class="fm_hr">
+                    <strong class="label">아이디</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="text" title="아이디" maxlength="12" placeholder="6~12자리 영문 또는 숫자">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">비밀번호</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput">
+                            <input type="password" title="비밀번호" placeholder="비밀번호를 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">비밀번호 확인</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput">
+                            <input type="password" title="비밀번호" placeholder="비밀번호를 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_check">
+                    <ul>
+                        <li class="bul_dot comple">· 1개 이상의 영문자가 포함 되어야 합니다.</li> <!-- 입력 조건이 갖춰지면 .comple 클래스 추가 -->
+                        <li class="bul_dot">· 1개 이상의 숫자가 포함 되어야 합니다.</li>
+                        <li class="bul_dot">· 9자리 이상 20자 미만으로 작성해주세요.</li>
+                        <li class="bul_dot">· 1개 이상의 특수문자(!,@,#,$,%,^,&,*,?,_,~)가 포함되어야 합니다.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="line"> <!-- 구분선 -->
+
+            <h2 class="spo_tit2">사용자 정보</h2>
+            <div class="form02_list">
+                <div class="fm_hr">
+                    <strong class="label">이름</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="text" title="이름" placeholder="이름을 입력하세요."> <!-- 201230_수정(placeholder 값 수정) -->
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">주민등록번호</strong>
+                    <div class="row">
+                        <div class="group">
+                            <div class="input_wrap col reinput">
+                                <input type="tel" maxlength="6" title="주민등록번호 앞자리">
+                            </div>
+                            <span class="mark bar"><span class="blind">-</span></span>
+                            <div class="input_wrap col reinput">
+                                <input type="tel" maxlength="7" title="주민등록번호 뒷자리">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="line"> <!-- 구분선 -->
+
+            <h2 class="spo_tit2">인증 정보</h2>
+            <div class="form02_list">
+                <div class="fm_hr">
+                    <strong class="label">이메일</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="text" title="이메일" placeholder="이메일을 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="btn_wrap strong mt30">
+                    <button type="button" class="btn em disabled" disabled><span>이메일 인증번호 받기</span></button> <!-- 비활성 -->
+                </div>
+                <div class="btn_wrap strong mt30">
+                    <button type="button" class="btn em"><span>이메일 인증번호 받기</span></button> <!-- 활성 -->
+                </div>
+                
+                <div class="fm_hr mt40">
+                    <strong class="label">이메일 인증번호</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                            <input type="tel" title="이메일 인증번호" placeholder="인증번호를 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- button -->
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em disabled" disabled><span>휴대전화 본인 인증</span></button> <!-- 비활성 -->
+            </div>
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em"><span>휴대전화 본인 인증</span></button> <!-- 활성 -->
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+<!-- 개인(신용)정보의 수집,이용에 관한 사항 layer popup -->
+<section class="layerpop_wrap full" id="layer1p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">한국신용정보원 이용약관</h1>
+                </header>
+                <div class="layerpop_body">
+                    <div class="lay_terms_wrap">
+                        
+                        
+
+                    </div>
+                </div>
+                <!-- bottom button -->
+                <div class="layerpop_foot">
+                    <div class="btn_wrap strong">
+                        <button type="button" class="btn em"><span>동의합니다.</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="layerpop_close">
+                <button type="button" class="js_close"><span class="blind">팝업닫기</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //개인(신용)정보의 수집,이용에 관한 사항 layer popup -->
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+
+</body>
+</html>

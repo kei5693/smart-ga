@@ -1,0 +1,126 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>사용자확인(SGA_SB_01004)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+  <!-- 210224 : SGA_SB_01003, SGA_SB_01004 뒤로가기 버튼 추가 -->
+  <a href="#" class="go_history"><span class="blind">이전</span></a>
+  <!-- //210224 : SGA_SB_01003, SGA_SB_01004 뒤로가기 버튼 추가 -->
+	<section class="content">
+		
+        <div class="conts_page pg_usercf">
+
+            <!-- top title -->
+            <div class="top_head img">
+                <h1 class="tit1"><strong class="strong">사용자 확인</strong></h1>
+                <p class="txt">SmartGA 회원 등록을 위해<br>
+                    휴대전화 인증을 진행합니다.</p>
+            </div>
+
+            <div class="form_list">
+                <div class="fm_row">
+                    <div class="input_wrap etc reinput">
+                        <input type="text" title="사용자명" placeholder="사용자명">
+                    </div>
+                </div>
+                <div class="fm_row">
+                    <div class="input_wrap etc reinput">
+                        <input type="text" title="휴대전화 번호" placeholder="휴대전화 번호">
+                    </div>
+                </div>
+            <!-- 210122_ui변경_수정 -->
+                <!-- 인증번호 받기 button -->
+                <div class="btn_wrap strong mt50"> <!-- 210122_ui변경_mt50 클래스 추가 -->
+                    <button type="button" class="btn em disabled" disabled><span>인증번호 받기</span></button> <!-- 비활성 -->
+                </div>
+                <div class="btn_wrap strong mt50"> <!-- 210122_ui변경_mt50 클래스 추가 -->
+                    <button type="button" class="btn em js_cert_receive"><span>인증번호 받기</span></button> <!-- 입력되면 .disabled 클래스 삭제 -->
+                </div>
+                <!-- //인증번호 받기 button -->
+
+            <!-- </div> 210122_ui변경_삭제 -->
+
+                <!-- 210122_ui변경_전체수정 -->
+                <div class="certify_wrap">
+            
+                    <div class="fm_hr certify_input">
+                        <strong class="label blind">인증번호</strong>
+                        <div class="row">
+                            <div class="input_wrap etc reinput">
+                                <input type="tel" maxlength="6" title="인증번호" placeholder="인증번호를 입력해주세요">
+                                <span class="fc_keycolor">02:59</span> <!-- 남은 시간 -->
+                            </div>
+                            <button type="button" class="btn"><span>인증번호 다시 받기</span></button>
+                        </div>
+                    </div>
+
+                    <!-- 인증 확인 button -->
+                    <div class="btn_wrap strong mt80">
+                        <button type="button" class="btn em disabled" disabled><span>인증 확인</span></button> <!-- 비활성 -->
+                    </div>
+                    <div class="btn_wrap strong mt80">
+                        <button type="button" class="btn em"><span>인증 확인</span></button> <!-- 입력되면 .disabled 클래스 삭제 -->
+                    </div>
+                    <!-- //인증 확인 button -->
+                </div>
+                <!-- //210122_ui변경_전체수정 -->
+
+            </div>
+            <!-- //210122_ui변경_수정 -->
+
+        </div>
+
+	</section>
+
+</div>
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script>
+	$(function(){
+		var certifiedView =  function() {
+			return {
+				init: function() {
+					this.certified();
+				},
+				certified: function() {
+                    var $certNum = $('.certify_wrap'); //210122_ui변경_수정
+                    
+                    $(document)
+                        .off('click', '.js_cert_receive:not([disabled])')
+                        .on('click', '.js_cert_receive:not([disabled])' , function(e){
+                            $certNum.show().find('.reinput input').focus();
+                            $( 'html, body' ).stop().animate({scrollTop:$certNum.offset().top },400);
+                        })
+                    
+					
+				}
+			}
+		}
+		certifiedView().init();
+
+	});
+</script>
+</body>
+</html>

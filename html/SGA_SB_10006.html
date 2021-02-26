@@ -1,0 +1,192 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>비교견적요청_자동차보험비교견적(SGA_SB_10006)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css">
+	<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap_compare">
+
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">오토인슈</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+
+	<section class="content">
+		<div class="conts_page pg_compare_req">
+            
+            <h2 class="spo_tit2_1"><strong class="strong">정예린</strong> 고객님이<br>직접 운전하시나요?</h2>
+
+            <ul class="radio_round_list mt35">
+                <li>
+                    <div class="radio icon bgcolor check">
+                        <input type="radio" id="rad_special_1" name="n_special" checked>
+                        <label for="rad_special_1">
+                            <strong class="em">직접운전</strong>
+                            <span class="p">계약자 / 피보험자 동일</span>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="radio icon bgcolor">
+                        <input type="radio" id="rad_special_2" name="n_special">
+                        <label for="rad_special_2">
+                            <strong class="em">다른 사람이 운전</strong>
+                            <span class="p">계약자 / 피보험자 다름</span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="other_info mt30 hide">
+                <h3 class="spo_tit4">피보험자 정보 입력</h3>
+                <div class="form02_list mt20">
+                    <div class="fm_hr">
+                        <strong class="label">피보험자 구분</strong>
+                        <div class="row">
+                            <ul class="fm_radio_list fm_col2">
+                                <li>
+                                    <div class="radio bgcolor check">
+                                        <input type="radio" id="male_rad" name="n_sex_radio" checked>
+                                        <label for="male_rad">개인</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio bgcolor">
+                                        <input type="radio" id="female_rad" name="n_sex_radio">
+                                        <label for="female_rad">법원</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 개인일 때 노출 -->
+                    <div class="info_sub show">
+                        <div class="fm_hr">
+                            <strong class="label">피보험자명</strong>
+                            <div class="row">
+                                <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                                    <input type="text" title="피보험자명" placeholder="피보험자명을 입력하세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fm_hr">
+                            <strong class="label">주민등록번호</strong>
+                            <div class="row">
+                                <div class="group">
+                                    <div class="input_wrap col reinput">
+                                        <input type="tel" maxlength="6" title="주민등록번호 앞자리">
+                                    </div>
+                                    <span class="mark bar"><span class="blind">-</span></span>
+                                    <div class="input_wrap col reinput">
+                                        <input type="tel" maxlength="7" title="주민등록번호 뒷자리">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fm_hr">
+                            <strong class="label">연락처</strong>
+                            <div class="row">
+                                <div class="input_wrap reinput">
+                                    <input type="tel" maxlength="11" title="연락처. - 없이 숫자 입력" placeholder="- 없이 숫자만 입력하세요.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 법인일 때 노출 -->
+                    <div class="info_sub hide">
+                        <div class="fm_hr">
+                            <strong class="label">법인명</strong>
+                            <div class="row">
+                                <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                                    <input type="text" title="법인명" placeholder="법인명을 입력하세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fm_hr">
+                            <strong class="label">사업자등록번호</strong>
+                            <div class="row">
+                                <div class="input_wrap reinput"> <!-- reinput 초기화 클래스 -->
+                                    <input type="tel" title="사업자등록번호" placeholder="숫자만 입력하세요.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fm_hr">
+                            <strong class="label">대표 연락처</strong>
+                            <div class="row">
+                                <div class="input_wrap reinput">
+                                    <input type="tel" maxlength="11" title="대표연락처. - 없이 숫자 입력" placeholder="- 없이 숫자만 입력하세요.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em"><span>자동차 보험료 견적 요청</span></button>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script>
+	$(function(){
+		$('.content')
+            .off('click', '.radio_round_list li')
+            .on('click', '.radio_round_list li' , function(){
+                var index = $(this).index();
+                var $buttonState = $('.conts_page>.btn_wrap>button');
+                var $otherInfo = $('.conts_page>.other_info');
+
+                if(index === 0) {
+                    $otherInfo.addClass('hide');
+                    $buttonState.attr('disabled', false).removeClass('disabled');
+                }else{
+                    $otherInfo.removeClass('hide');
+                    $buttonState.attr('disabled', true).addClass('disabled'); 
+                }
+
+        })    
+        .off('click', '.fm_radio_list li')
+        .on('click', '.fm_radio_list li' , function(){
+            var $this = $(this);
+            var index = $this.index();
+            var $panels = $this.closest('.form02_list');
+            var $panel = $panels.find('.info_sub');
+            var $target = $panels.find('.info_sub:eq(' + index + ')');
+
+            $panel.removeClass('show').addClass('hide').attr('tabindex');
+            $target.removeClass('hide').addClass('show').attr('tabindex', 0);
+
+        });
+
+	});
+</script>
+</body>
+</html>

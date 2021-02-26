@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>확인서생성_상품정보_상품없음(SGA_SB_07007)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap" class="wrap_smart"> <!-- 210122_ui변경_스마트확인서일 경우 .wrap_smart 클래스 추가  -->
+		
+	<!-- 210209_ui변경 -->
+	<header class="header app_header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title"><span class="blind">스마트 확인서</span></h1>
+        <a href="#" class="go_close"><span class="blind">닫기</span></a>
+    </header>
+    <!-- //210209_ui변경 -->
+
+	<section class="content">
+		<div class="conts_page pg_sm_create_3">
+            
+            <p class="brand_logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></p>
+
+            <h2 class="spo_tit2">KB손해보험<br>정기 보험</h2>
+
+            <!-- 상품이 없을 때 노출 -->
+            <div class="no_result">
+                <p class="txt16">
+                    해당하는 상품이 없습니다.<br>
+                    청약 상품 그룹을 다시 선택하여 주시기 바랍니다.<br><br>
+
+                    미등록 상품 요청은 고객센터(070-7725-6535)로<br>
+                    문의해 주시기 바랍니다.
+                </p>
+                <p class="fc_gray">
+                    고객센터 운영시간: 평일 09:00~18:00<br>
+                    (점심시간: 12:00~13:00)
+                </p>
+            </div>
+            
+		</div>
+	</section>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script>
+	$(function(){
+		var radioTab =  function() {
+			return {
+				init: function() {
+					this.radioTabView();
+				},
+				radioTabView: function() {
+                    var $buttonState = $('.conts_page>.btn_wrap>button');
+                     
+                    $(document)
+                        .off('click', '.radio_insur_list li input:radio')
+                        .on('click', '.radio_insur_list li input:radio' , function(){
+                            if($buttonState.prop('disabled')) $buttonState.attr('disabled', false).removeClass('disabled');
+                    })
+
+				}
+			}
+		}
+        radioTab().init();
+
+	});
+</script>
+</body>
+</html>

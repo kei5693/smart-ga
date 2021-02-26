@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*
+ * [EDA] UI Dev Team
+ * @description [EDA] brand color type 1
+ */
+
+
+/* key text color */
+.fc_keycolor{color:#F37321 !important;} 
+
+/* key bg color */
+.fc_keybgcolor{background-color:#F37321 !important;} 
+
+/* layerpopup bottom key text color */
+.btn_pop_alert{color:#F37321} 
+
+/* button bg color */
+.btn.em, .btn_wrap.strong .btn.em{border:1px solid #F37321;background-color:#F37321;} 
+
+/* input line color */
+.input_wrap.etc.on::after{background-color:#F37321} 
+.input_wrap.on{border:1px solid #F37321;}
+/* //input line color */
+
+/* radio/checkbox icon */
+.checkbox.icon.check label svg path, .radio.icon.check label svg path, .radio.icon.check label svg circle{fill:#F37321;}
+.check_list .checkbox.bgcolor.check label, .radio_list .radio.bgcolor.check label{border:0;background-color:#F37321;}
+
+/* radio/checkbox */
+.checkbox.bgcolor.check label, .radio.bgcolor.check label{border:1px solid #F37321;background-color:rgba(243,115,33,.1);}
+
+/* 날짜선택 달력에서 선택된 day */
+.datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover{background-color:rgba(243,115,33,.4);}
+
+/* key color 로 강조된 Link 일 때 사용  */
+.bgcolor_selected{border:1px solid #F37321 !important;background-color:rgba(243,115,33,.1) !important;}
+
+/* process present pass color */
+.process_wrap li.on{background-color:#F37321}
+

@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>간편비밀번호(SGA_SB_01002)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+
+	<section class="content">
+		
+		<!-- 간편 비밀번호 -->
+		<div class="easy_pw_wrap">
+			<div class="top_head">
+				<h1 class="tit1"><strong>간편 비밀번호를</strong><br>입력해주세요</h1>
+
+				<div class="dp_view">
+					<span class="dp_unit"></span> <!-- 비밀번호가 입력되면 .on 클래스 추가 -->
+					<span class="dp_unit"></span>
+					<span class="dp_unit"></span>
+					<span class="dp_unit"></span>
+				</div>
+			</div>
+
+			<h2><span class="blind">비밀번호 선택해주세요</span></h2>
+			<div class="key_input_wrap">
+				<!-- button -->
+				<div class="key_input">
+					<button type="button"><span>1</span></button>
+					<button type="button"><span>2</span></button>
+					<button type="button"><span>3</span></button>
+					<button type="button"><span>4</span></button>
+					<button type="button"><span>5</span></button>
+					<button type="button"><span>6</span></button>
+					<button type="button"><span>7</span></button>
+					<button type="button"><span>8</span></button>
+					<button type="button"><span>9</span></button>
+					<button type="button"><span>0</span></button>
+					<button type="button" class="clear"><span class="blind">삭제</span></button>
+				</div>
+				<!-- //button -->
+
+				<div class="etc_wrap">
+					<div class="togglemk">
+						<a href="#toggle-qmark2" class="mkhead jstoggle" role="button" aria-expanded="false"><span class="txt">간편 비밀번호를 잊으셨나요?</span><span class="blind">추가 설명 보기</span></a>
+						<div id="toggle-qmark2" class="boxtogmk jstogglewrap" aria-hidden="true" tabindex="0">
+							<div class="qmwrap">
+								간편 비밀번호를 잊으셨다면,<br>
+								SmartGA 사용자 등록을 다시 진행해주세요.<br>
+								간단한 사용자 인증 후, 서비스를 다시 사용하실 수 있습니다.
+							</div>
+							
+							<button type="button" data-toggle-origin="toggle" class="cls"><span class="blind">추가 설명 닫기</span></button>
+						</div>
+					</div>
+	
+					<button type="button" class="btn"><span>SmartGA 사용자 등록</span></button>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+</div>
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script>
+	$(function(){
+		var easyPsNumber =  function() {
+			return {
+				init: function() {
+					this.easyPsNumberDisplay();
+				},
+				easyPsNumberDisplay: function() {
+					var $dpView = $('.dp_view span');
+					var $dpViewOn = $('.dp_view span.on').length;
+
+					$(document)
+                        .off('click', '.key_input button')
+                        .on('click', '.key_input button' , function(e){
+							if($(this).hasClass('clear')){
+								if($dpView.hasClass('on')){
+									$dpViewOn = $dpViewOn - 1;
+									$dpView.each(function(index, item){
+										if( $dpViewOn === index ){
+											$(this).removeClass('on');
+										}	
+									})
+								}
+								
+								$dpViewOn = $dpViewOn > 0 ? $dpViewOn : 0;
+							}else{
+								
+								$dpView.each(function(index, item){
+									if( $dpViewOn < $dpView.length ){
+										if( $dpViewOn === index ){
+											$(this).addClass('on');
+										}	
+									}
+								});
+								
+								$dpViewOn = $dpViewOn >= $dpView.length ? $dpView.length : $dpViewOn+1;
+								
+							}
+						})
+				}
+			}
+		}
+        easyPsNumber().init();
+
+	});
+</script>
+</body>
+</html>

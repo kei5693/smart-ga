@@ -1,0 +1,295 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>유지율/수익률_회차별 추이(SGA_SB_12007)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_type01.css"><!-- 210122_ui변경_css추가 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+
+    <header class="header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title">Title</h1>
+    </header>
+
+	<section class="content">
+
+        <div style="padding:3rem;">
+
+            <a href="#layer1p" aria-haspopup="true" data-target="#" class="btn js_btnlayerpop">설계사 별 회차별 유지율 추이</a><br><br>
+            
+            <a href="#layer2p" aria-haspopup="true" data-target="#" class="btn js_btnlayerpop">설계사 별 회차별 수금율 추이</a><br><br>
+
+        </div>
+        
+    </section>
+
+</div>
+
+<!-- 설계사 별 회차별 유지율 추이 layer popup -->
+<section class="layerpop_wrap full" id="layer1p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <div class="lay_salmage">
+                        <h1 class="tit">
+                            <span class="desc">2020.12 기준</span>
+                            강시은(100001) 회차별 유지율 추이
+                        </h1>
+                    </div>
+                </header>
+                <div class="layerpop_body">
+                    <div class="lay_salmage">
+                        
+                        <div class="sm_chart_01">
+                            <!-- chart -->
+                            <div class="chart_wrap">
+                                <img src="../images/temp_chart_03.png" alt="">
+                            </div>
+                        </div>
+
+                        <hr class="line">
+
+                        <h2 class="spo_tit2">건별 유지 자료</h2> <!-- 210114_수정 -->
+
+                        <!-- filter -->
+                        <div class="filter">
+                            <ul class="radio_list">
+                                <li>
+                                    <div class="radio bgcolor check"> <!-- 210209_ui변경_(.bgcolor 클래스 추가) -->
+                                        <input type="radio" id="rad_keep01" name="n_radio_keep" checked="">
+                                        <label for="rad_keep01">정상</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio bgcolor">
+                                        <input type="radio" id="rad_keep02" name="n_radio_keep">
+                                        <label for="rad_keep02">미유지</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- list -->
+                        <div class="contract_list mlrm20">
+                            <ul class="list">
+                                <li>
+                                    <div class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>(20205822464)</span>
+                                        </strong>
+                                        <span class="tag3">정상</span>
+                                        <p class="logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></p>
+                                        <p class="type">무배당 간병비 평생받는 치매보험</p>
+                                        
+                                        <div class="name_wrap">
+                                            <p><span class="tt">모집고</span><span>223,950</span></p>
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">유지고</span><span>223,950</span></p>
+                                            <p><span class="tt">피보험자</span><span>김다현</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>(20205822464)</span>
+                                        </strong>
+                                        <span class="tag3">해약</span>
+                                        <p class="logo"><img src="../images/temp_logo_brand_02.png" alt="현대해상화재보험"></p>
+                                        <p class="type">우리아이변액연금(2015.04)</p>
+                                        
+                                        <div class="name_wrap">
+                                            <p><span class="tt">모집고</span><span>223,950</span></p>
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">유지고</span><span>223,950</span></p>
+                                            <p><span class="tt">피보험자</span><span>김다현</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>(20205822464)</span>
+                                        </strong>
+                                        <span class="tag3">정상</span>
+                                        <p class="logo"><img src="../images/temp_logo_brand_03.png" alt="삼성화재"></p>
+                                        <p class="type">무배당 간병비 평생받는 치매보험</p>
+                                        
+                                        <div class="name_wrap">
+                                            <p><span class="tt">모집고</span><span>223,950</span></p>
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">유지고</span><span>223,950</span></p>
+                                            <p><span class="tt">피보험자</span><span>김다현</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>(20205822464)</span>
+                                        </strong>
+                                        <span class="tag3">해약</span>
+                                        <p class="logo"><img src="../images/temp_logo_brand_02.png" alt="현대해상화재보험"></p>
+                                        <p class="type">우리아이변액연금(2015.04)</p>
+                                        
+                                        <div class="name_wrap">
+                                            <p><span class="tt">모집고</span><span>223,950</span></p>
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">유지고</span><span>223,950</span></p>
+                                            <p><span class="tt">피보험자</span><span>김다현</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="layerpop_close">
+                <button type="button" class="js_close"><span class="blind">팝업닫기</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //설계사 별 회차별 유지율 추이 layer popup -->
+
+<!-- 설계사 별 회차별 수금율 추이 layer popup -->
+<section class="layerpop_wrap full" id="layer2p" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <div class="lay_salmage">
+                        <h1 class="tit">
+                            <span class="desc">2020.12 기준</span>
+                            강시은(100001) 회차별 수금율 추이
+                        </h1>
+                    </div>
+                    <h1 class="tit blind">회차별 수금율 추이</h1>
+                </header>
+                <div class="layerpop_body">
+                    <div class="lay_salmage">
+                        
+                        <div class="sm_chart_02">
+                            <!-- chart -->
+                            <div class="chart_wrap">
+                                <img src="../images/temp_chart_03.png" alt="">
+                            </div>
+                        </div>
+
+                        <hr class="line">
+
+                        <h2 class="spo_tit2">건별 유지 자료</h2> <!-- 210114_수정 -->
+
+                        <!-- list -->
+                        <div class="contract_list mlrm20">
+                            <ul class="list">
+                                <li>
+                                    <div class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>(20205822464)</span>
+                                        </strong>
+                                        <p class="logo"><img src="../images/temp_logo_brand_01.png" alt="KB손해보험"></p>
+                                        <p class="type">무배당 간병비 평생받는 치매보험</p>
+                                        
+                                        <div class="name_wrap">
+                                            <p class="long"><span class="tt">최종납입월(회차)</span><span>202011(13)</span></p>
+                                            <p><span class="tt">수금자원</span><span>223,950</span></p>
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">수금실적</span><span>223,950</span></p>
+                                            <p><span class="tt">피보험자</span><span>김다현</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>(20205822464)</span>
+                                        </strong>
+                                        <p class="logo"><img src="../images/temp_logo_brand_02.png" alt="현대해상화재보험"></p>
+                                        <p class="type">우리아이변액연금(2015.04)</p>
+                                        
+                                        <div class="name_wrap">
+                                            <p class="long"><span class="tt">최종납입월(회차)</span><span>202011(13)</span></p>
+                                            <p><span class="tt">수금자원</span><span>223,950</span></p>
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">수금실적</span><span>223,950</span></p>
+                                            <p><span class="tt">피보험자</span><span>김다현</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>(20205822464)</span>
+                                        </strong>
+                                        <p class="logo"><img src="../images/temp_logo_brand_03.png" alt="삼성화재"></p>
+                                        <p class="type">무배당 간병비 평생받는 치매보험</p>
+                                        
+                                        <div class="name_wrap">
+                                            <p class="long"><span class="tt">최종납입월(회차)</span><span>202011(13)</span></p>
+                                            <p><span class="tt">수금자원</span><span>223,950</span></p>
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">수금실적</span><span>223,950</span></p>
+                                            <p><span class="tt">피보험자</span><span>김다현</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contract_li">
+                                        <strong class="date_insur">
+                                            <span>2020-10-29</span><span>(20205822464)</span>
+                                        </strong>
+                                        <p class="logo"><img src="../images/temp_logo_brand_02.png" alt="현대해상화재보험"></p>
+                                        <p class="type">우리아이변액연금(2015.04)</p>
+                                        
+                                        <div class="name_wrap">
+                                            <p class="long"><span class="tt">최종납입월(회차)</span><span>202011(13)</span></p>
+                                            <p><span class="tt">수금자원</span><span>223,950</span></p>
+                                            <p><span class="tt">계약자</span><span>김다현</span></p>
+                                            <p><span class="tt">수금실적</span><span>223,950</span></p>
+                                            <p><span class="tt">피보험자</span><span>김다현</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="layerpop_close">
+                <button type="button" class="js_close"><span class="blind">팝업닫기</span></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //설계사 별 회차별 수금율 추이 layer popup -->
+
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+</body>
+</html>
