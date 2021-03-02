@@ -174,7 +174,7 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 
 /* 연락처 list */
 /* 210302 : 헤더(GNB) 바디 영역 분리 */
-.radio_contact_list{margin:3.8rem -2.2rem 0;border-top:1px solid rgba(0,0,0,.2);overflow-y: scroll;height:148px;}
+.radio_contact_list{margin:3.8rem -2.2rem 0;border-top:1px solid rgba(0,0,0,.2);overflow-y: scroll;height:160px;}
 .radio_contact_list li{border-bottom:1px solid rgba(0,0,0,.2);}
 .radio_contact_list > ul + .btn_wrap.strong {margin:1.4rem 2.2rem 0;}
 .radio_contact_list .radio input{position:absolute;left:0;top:0;opacity:0;}
