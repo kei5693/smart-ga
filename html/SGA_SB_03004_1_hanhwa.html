@@ -1,0 +1,192 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>고객 상세 정보 수정-개인(SGA_SB_03004)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_hanhwa.css">
+    <script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<!-- skip -->
+<!-- <div id="skip">
+    <a href="#content">본문 바로가기</a>
+    <a href="#bottom_navmn">메뉴 바로가기</a>
+</div> -->
+
+<div id="wrap">
+		
+	<header class="header">
+        <a href="#" class="go_history"><span class="blind">이전</span></a>
+        <h1 class="title">고객 상제 정보 수정</h1>
+    </header>
+
+	<section class="content">
+		<div class="conts_page pg_hpcsreg">
+            
+            <h3 class="spo_tit2">기본정보</h3>
+            <!-- form list -->
+            <div class="form02_list">
+                <div class="fm_hr">
+                    <strong class="label">고객명</strong>
+                    <div class="row">
+                        <div class="input_wrap readonly">
+                            <input type="text" value="홍길동" title="고객명" readonly placeholder="고객명을 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <!-- 210203_수정(주민등록번호 삭제, 성별 추가) -->
+                <div class="fm_hr">
+                    <strong class="label">성별</strong>
+                    <div class="row">
+                        <div class="rad_chk cols_sex">
+                            <span class="radio icon check">
+                                <input type="radio" id="male_rad" name="n_sex_radio" checked>
+                                <label for="male_rad">남성</label>
+                            </span>
+                            <span class="radio icon">
+                                <input type="radio" id="female_rad" name="n_sex_radio">
+                                <label for="female_rad">여성</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 삭제 <div class="fm_hr">
+                    <strong class="label">주민등록번호</strong>
+                    <div class="row">
+                        <div class="group">
+                            <div class="input_wrap col readonly">
+                                <input type="tel" value="123456" maxlength="6" readonly title="주민등록번호 앞자리">
+                            </div>
+                            <span class="mark bar"><span class="blind">-</span></span>
+                            <div class="input_wrap col readonly">
+                                <input type="tel" value="1234567" maxlength="7" readonly title="주민등록번호 뒷자리">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- //210203_수정(주민등록번호 삭제, 성별 추가) -->
+                <div class="fm_hr">
+                    <strong class="label">연락처</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput">
+                            <input type="tel" maxlength="11" title="연락처. - 없이 숫자만 입력하세요." placeholder="- 없이 숫자만 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">생일</strong>
+                    <div class="row">
+                        <div class="group">
+                            <div class="input_wrap col readonly"> <!-- readonly 클래스 추가 -->
+                                <input type="tel" maxlength="11" title="생일" readonly>
+                            </div>
+                            <span class="blank"></span>
+                            <ul class="stick_radio_list col"> <!-- 210122_ui변경_(클래스 수정) -->
+                                <li>
+                                    <div class="radio bgcolor check"> <!-- 210122_ui변경_( .bgcolor 클래스 추가) -->
+                                        <input type="radio" id="rad01" name="n_radio" checked="">
+                                        <label for="rad01">양력</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio bgcolor"> <!-- 210122_ui변경_( .bgcolor 클래스 추가) -->
+                                        <input type="radio" id="rad02" name="n_radio">
+                                        <label for="rad02">음력</label> <!-- 210122_ui변경_( .suc 클래스 삭제) -->
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <hr class="line">
+
+            <h3 class="spo_tit2">부가 정보</h3>
+            <!-- form list -->
+            <div class="form02_list">
+                <div class="fm_hr">
+                    <strong class="label">차량번호</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput">
+                            <input type="text" title="차량번호">
+                        </div>
+                    </div>
+                </div>
+                <!-- 주소 검색 -->
+                <div class="fm_hr sch_addr">
+                    <strong class="label">주소</strong>
+                    <div class="row">
+                        <button type="button" class="btn_sch_addr"><span>주소 검색</span></button>
+                    </div>
+                    <div class="row multi">
+                        <div class="input_wrap readonly"> <!-- readonly 클래스 추가 -->
+                            <input type="text" title="주소" readonly>
+                        </div>
+                        <div class="input_wrap reinput">
+                            <input type="text" title="상세 주소" placeholder="상세 주소를 입력하세요.">
+                        </div>
+                    </div>
+                </div>
+                <!-- //주소 검색 -->
+                <div class="fm_hr in_email">
+                    <strong class="label">이메일</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput">
+                            <input type="text" title="이메일">
+                        </div>
+                    </div>
+                </div>
+                <div class="fm_hr">
+                    <strong class="label">직업</strong>
+                    <div class="row">
+                        <div class="input_wrap reinput">
+                            <input type="text" title="직업" placeholder="예) 회사원">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- button -->
+            <div class="btn_wrap strong mt80">
+                <button type="button" class="btn em"><span>가망 고객 등록</span></button>
+            </div>
+
+		</div>
+	</section>
+
+	<!-- bottom fix menu -->
+	<nav class="bottom_navmn">
+		<div class="conts">
+			<a href="#" class="nv_home"><span class="blind">홈</span></a> <!-- 선택된 페이지 .on 클래스 추가 -->
+			<a href="#" class="nv_cal"><span class="blind">일정관리</span></a>
+			<a href="#" class="nv_cs on"><span class="blind">고객관리</span></a>
+			<a href="#" class="nv_more"><span class="blind">더 보기</span></a>
+		</div>
+	</nav>
+
+</div>
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+
+</body>
+</html>
