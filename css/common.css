@@ -134,8 +134,12 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .csmge_sumup .right .carnum .car{margin-left:.4rem;}
 
 /* 고객관리리스트 - 라운드 */
-.csmge_list.round{margin-top:1.5rem;}
-.csmge_list.round li{padding:.7rem 0;border-bottom:0;}
+/* 210302 : 헤더(GNB) 바디 영역 분리 */
+.csmge_list.round{margin-top:1.5rem;overflow-y:scroll;height:298px;}
+.csmge_list.round li{/*padding:.7rem 0;*/padding:0;border-bottom:0;}
+.csmge_list.round li + li {padding:1.4rem 0 0;border-bottom:0;}
+.csmge_list.round > ul + .btn_wrap.strong {margin-top:1.4rem;}
+/* //210302 : 헤더(GNB) 바디 영역 분리 */
 .csmge_list.round .csmge_sumup label{display:-webkit-box;display:-webkit-flex;display:flex;position:relative;width:100%;border:1px solid rgba(0,0,0,.2);border-radius:.8rem;width:100%;padding:1.8rem 2rem 1.6rem;}
 .csmge_list.round .csmge_sumup .right span.p{display:-webkit-box;display:-webkit-flex;display:flex;margin-top:0;}
 .csmge_list.round .csmge_sumup .right span.p:nth-of-type(2){margin-top:1.4rem;}
@@ -169,13 +173,16 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .contract_list .contract_li .spo_tit2{display:block;}
 
 /* 연락처 list */
-.radio_contact_list{margin-top:3.8rem;border-top:1px solid rgba(0,0,0,.2);}
+/* 210302 : 헤더(GNB) 바디 영역 분리 */
+.radio_contact_list{margin:3.8rem -2.2rem 0;border-top:1px solid rgba(0,0,0,.2);overflow-y: scroll;height:148px;}
 .radio_contact_list li{border-bottom:1px solid rgba(0,0,0,.2);}
+.radio_contact_list > ul + .btn_wrap.strong {margin:1.4rem 2.2rem 0;}
 .radio_contact_list .radio input{position:absolute;left:0;top:0;opacity:0;}
-.radio_contact_list .radio label{display:-webkit-box;display:-webkit-flex;display:flex;height:5.3rem;margin:0 -2.2rem;padding:0 2.2rem;}
+.radio_contact_list .radio label{display:-webkit-box;display:-webkit-flex;display:flex;height:5.3rem;margin:0;padding:0 2.2rem;}
 .radio_contact_list .radio.bgcolor.check label{border:0;}
 .radio_contact_list .radio span{width:100%;font-size:1.6rem;line-height:5.3rem;}
 .radio_contact_list .radio .naem{padding-right:1rem;}
+/* //210302 : 헤더(GNB) 바디 영역 분리 */
 
 /* 보험상품 list */
 .is_prd_list{margin-top:.5rem;}
