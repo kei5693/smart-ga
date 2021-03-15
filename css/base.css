@@ -216,6 +216,11 @@ div[data-role="page"]{height:100%;}
     .wrap_smart .header.subm.app_header{background-color:#19B578;}
     .wrap_smart .app_subminfo_box{background-color:#19B578;}
     .layerpop_wrap.full .layerpop_header .lay_sm_mage .tit{background-color:#19B578;}
+
+    /* 210315 : 서명등록페이지 추가 */
+    /* 스마트 확인서 서명하기 배경색 */
+    .wrap_smart .sign_write .sign_inner {background-color:rgba(25,181,120,.2);}
+    /* //210315 : 서명등록페이지 추가 */
 /* //스마트 확인서 */
 
 /* 다이렉트다모아 */

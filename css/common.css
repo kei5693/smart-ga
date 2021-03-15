@@ -132,14 +132,18 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .csmge_sumup .right p.long span:nth-of-type(2){margin-top:.7rem;text-align:left;}
 .csmge_sumup .right .carnum{display:block;width:100%;margin-top:.7rem;text-align:right;}
 .csmge_sumup .right .carnum .car{margin-left:.4rem;}
+/* 210309 : 스크롤 영역 추가 */
+.pg_csmage .csmge_rs .csmge_list {overflow-y:scroll;height:100vw;}
+.pg_csmage .csmge_rs .csmge_list > .btn_wrap {margin-top:1.4rem;}
+/* //210309 : 스크롤 영역 추가 */
 
 /* 고객관리리스트 - 라운드 */
-/* 210302 : 헤더(GNB) 바디 영역 분리 */
+/* 210304 : 헤더(GNB) 바디 영역 분리 */
 .csmge_list.round{margin-top:1.5rem;overflow-y:scroll;height:298px;}
 .csmge_list.round li{/*padding:.7rem 0;*/padding:0;border-bottom:0;}
 .csmge_list.round li + li {padding:1.4rem 0 0;border-bottom:0;}
 .csmge_list.round > ul + .btn_wrap.strong {margin-top:1.4rem;}
-/* //210302 : 헤더(GNB) 바디 영역 분리 */
+/* //210304 : 헤더(GNB) 바디 영역 분리 */
 .csmge_list.round .csmge_sumup label{display:-webkit-box;display:-webkit-flex;display:flex;position:relative;width:100%;border:1px solid rgba(0,0,0,.2);border-radius:.8rem;width:100%;padding:1.8rem 2rem 1.6rem;}
 .csmge_list.round .csmge_sumup .right span.p{display:-webkit-box;display:-webkit-flex;display:flex;margin-top:0;}
 .csmge_list.round .csmge_sumup .right span.p:nth-of-type(2){margin-top:1.4rem;}
@@ -171,9 +175,13 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .contract_list .contract_li .name_wrap p span ~ span{margin-left:.4rem;}
 .contract_list .contract_li .cate{margin-bottom:.4rem;font-size:1.6rem;line-height:2.2rem;}
 .contract_list .contract_li .spo_tit2{display:block;}
+/* 210309 : 스크롤 영역 추가 */
+.contract_list.scroll_box {overflow-y: scroll;height: 100vw;}
+.contract_list.scroll_box > .btn_wrap {padding: 0 2.2rem;margin-top: 1.4rem;}
+/* //210309 : 스크롤 영역 추가 */
 
 /* 연락처 list */
-/* 210302 : 헤더(GNB) 바디 영역 분리 */
+/* 210304 : 스크롤 영역 추가 */
 .radio_contact_list{margin:3.8rem -2.2rem 0;border-top:1px solid rgba(0,0,0,.2);overflow-y: scroll;height:30vh;}
 .radio_contact_list li{border-bottom:1px solid rgba(0,0,0,.2);}
 .radio_contact_list > ul + .btn_wrap.strong {margin:1.4rem 2.2rem 0;}
@@ -182,7 +190,7 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .radio_contact_list .radio.bgcolor.check label{border:0;}
 .radio_contact_list .radio span{width:100%;font-size:1.6rem;line-height:5.3rem;}
 .radio_contact_list .radio .naem{padding-right:1rem;}
-/* //210302 : 헤더(GNB) 바디 영역 분리 */
+/* //210304 : 스크롤 영역 추가 */
 
 /* 보험상품 list */
 .is_prd_list{margin-top:.5rem;}
@@ -533,7 +541,11 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .conts_page.pg_more_info{padding:0 0 9.8rem 0;}
 .pg_more_info .box_mypfinfo{background-color:#fff;}
 .bg_gray .pg_more_info .jstab.type02 .filter{margin-bottom:.8rem;padding:3.4rem 2.2rem 2rem;background-color:#fff;}
-.pg_more_info .insur_list{padding:0 2.2rem;}
+/* 210309 : 스크롤 영역 추가 */
+.pg_more_info .insur_list{padding:0 2.2rem;overflow-y: scroll;height:101vw;}
+.pg_more_info .insur_list > .btn_wrap {margin-top:1.4rem;}
+.pg_more_info .insur_list > .btn_wrap button {background: #fff;}
+/* //210309 : 스크롤 영역 추가 */
 .pg_more_info .insur_list li{padding-top:1.6rem;}
 .pg_more_info .insur_list .insur_li{display:-webkit-box;display:-webkit-flex;display:flex;flex-wrap:wrap;position:relative;padding:2rem .6rem .9rem 2rem;background-color:#fff;border-radius:.8rem;}
 .pg_more_info .insur_list .insur_li .bt_call{position:absolute;right:0;top:0;width:4.6rem;height:4.5rem;}
@@ -544,7 +556,6 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .pg_more_info .insur_list .insur_li .item{width:50%;margin-bottom:1rem;}
 .pg_more_info .insur_list .insur_li .item .tt{display:inline-block;width:7rem;color:#707070;vertical-align:middle;}
 .pg_more_info .insur_list .insur_li .item .txt{display:inline-block;vertical-align:middle;}
-
 .pg_more_pw .easy_pw_wrap .top_head{padding-top:3rem;padding-bottom:6.8rem;}
 .pg_more_pw .easy_pw_wrap .top_head .txt{height:14.5rem;}
 @media only screen and (max-device-height:760px)  {
@@ -716,6 +727,14 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .pg_smart .app_subminfo_box p strong{display:block;margin-bottom:1rem;font-size:2rem;font-weight:700;}
 .pg_smart .app_subminfo_box p .strong{font-weight:700;}
 .pg_smart .banner{margin-top:10rem;}
+
+/* 210315 : 서명등록페이지 추가 */
+.pg_sm_proc_sign .sign_write{position:relative;margin:3.2rem 0 6rem;}
+.pg_sm_proc_sign .sign_write .sign_inner{display:flex;justify-content:center;align-items:center;height:20rem;margin-top:1.5rem;color:#929292;font-size:3.2rem;line-height:4.2rem;text-align:center;border-radius: 10px;}
+.pg_sm_proc_sign .sign_write .bt_rewrite{position:relative;margin-top:1.1rem;padding:0 0 0 2.8rem;color:#707070;line-height:2.6rem;}
+.pg_sm_proc_sign .sign_write .bt_rewrite::before{content:'';position:absolute;left:0;top:0;width:2.6rem;height:2.6rem;background-image: url(../web/images/sp_web.png);background-position:-40rem 0;background-size: 70rem auto;}
+/* //210315 : 서명등록페이지 추가 */
+
 
 .pg_sm_mage .scr_wrap{margin-top:2rem;}
 .pg_sm_mage .filter{margin-top:2.6rem;}
