@@ -1162,5 +1162,59 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .pg_edu_view .edu_tag_wrap{margin:.8rem -1rem -.2rem;}
 .pg_edu_view .edu_tag_wrap a{display:inline-block;padding:.2rem 1rem;font-size:1.6rem;line-height:2.2rem;white-space:nowrap;vertical-align:middle;}
 
+/* 210413 : 에러페이지 추가 */
+.error_page {
+  height:100%;
+  padding-top: 16.31vh;
+  box-sizing: border-box;
+}
+.error_page > .inner {
+  position: relative;
+  width:100%;
+  padding-top:25.6rem;
+}
+.error_page > .inner:after {
+  content:'';
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  width:41.4rem;
+  height:25.6rem;
+  background: url('../images/sp_error.png') no-repeat;
+  background-size:auto 60rem;
+}
+.error_page > .inner .title {
+  font-size: 2.4rem;
+  color:#101010;
+  text-align: center;
+  margin-top:5rem;
+}
+.error_page > .inner .title strong {color:#615CC0;}
+.error_page .btn_wrap {
+  position: absolute;
+  bottom:0;
+  left:0;
+  margin:0;
+  width:100%;
+  padding:0 2.2rem 2.2rem;
+  box-sizing: border-box;
+}
+.wrap_smart .error_page,
+.wrap_direct .error_page,
+.wrap_factfd .error_page,
+.wrap_compare .error_page,
+.wrap_claim .error_page {padding-top: calc(16.32vh - 7.1rem);}
 
+.wrap_smart .error_page > .inner .title strong {color:#19B578;}
+.wrap_direct .error_page > .inner .title strong {color:#F72585;}
+.wrap_factfd .error_page > .inner .title strong {color:#5AC8FA;}
+.wrap_compare .error_page > .inner .title strong {color:#007AFF;}
+.wrap_claim .error_page > .inner .title strong {color:#AF52DE;}
 
+.wrap_smart .error_page > .inner:after    {background-position: -50rem 0;}
+.wrap_direct .error_page > .inner:after   {background-position: -100rem 0;}
+.wrap_factfd .error_page > .inner:after   {background-position: -150rem 0;}
+.wrap_compare .error_page > .inner:after  {background-position: 0 -30rem;}
+.wrap_claim .error_page > .inner:after    {background-position: -50rem -30rem;}
+/* //210413 : 에러페이지 추가 */

@@ -140,6 +140,8 @@ div.no_result::after{background-position:-6rem -22rem;}
 .lay_gift_opt .message.msg_conts::after{background-position:-10rem -30rem;}
 .lay_gift_opt .message.msg_gift::after{background-position:0 -30rem;}
 
-
-
-
+/* 210413 : 에러페이지 추가 */
+.error_page {padding-top: 16.32vh;}
+.error_page > .inner .title strong {color:#F37321;}
+.error_page > .inner:after   {background-position: -100rem -30rem;}
+/* //210413 : 에러페이지 추가 */
