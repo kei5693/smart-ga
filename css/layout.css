@@ -30,7 +30,7 @@ html.lypop_open, html.lypop_open body{-webkit-user-select:none;-webkit-touch-cal
 /* //Skip Navigation */
 
 /* wrap */
-#wrap {position:relative;height:100%;background-color:#fff;overflow:hidden;z-index:5} /* 210413 : 에러페이지 추가 */
+#wrap {position:relative;min-height:100%;background-color:#fff;overflow:hidden;z-index:5} /* 210415 : 에러페이지 추가 (min-height:100%; 원복) */
 #wrap.fullvw{height:100%;}
 #wrap.fullvw .content{height:100%;}
 #wrap.fullvw .header ~ .content{height:calc(100% - 7.1rem);}

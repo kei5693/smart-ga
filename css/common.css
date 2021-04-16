@@ -94,8 +94,8 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .top_summary .radio_list{position:absolute;left:0;bottom:3.6rem;width:100%;}
 
 /* Badge */
-.tag {display:inline-block;height:2rem;padding:.1rem .7rem 0;border:1px solid #707070;border-radius:1rem;line-height:1.9rem;}
-.tag2{display:inline-block;height:2rem;padding:.1rem .7rem 0;border-radius:1rem;line-height:1.9rem;}
+.tag {display:inline-block;height:2rem;padding:0 .7rem;border:1px solid #707070;border-radius:1rem;line-height:1.6rem;} /* 210416 : ga korea 추가(텍스트 중앙정렬) */
+.tag2{display:inline-block;height:2rem;padding:0 .7rem;border-radius:1rem;line-height:1.6rem;} /* 210416 : ga korea 추가(텍스트 중앙정렬) */
 .tag2.cate1{border:1px solid #707070;color:#707070;}/* 실효 */
 .tag2.cate2{border:1px solid #D43E25;color:#D43E25;}/* 연체 */
 
@@ -116,7 +116,7 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .csmge_sumup .ui-radio{width:100%;} /* jquery.mobile-1.4.5.min.js */
 .csmge_sumup .left{display:block;width:50%;margin-right:1rem;}
 .csmge_sumup .left strong{position:relative;width:100%;font-size:2rem;line-height:2.8rem;font-weight:700;}
-.csmge_sumup .left strong.ico{padding-right:3.9rem;}
+.csmge_sumup .left strong.ico{padding-right:3.9rem;display:inline-block;width:auto;max-width: 100%;} /* 210416 : ga korea 추가 (선물 아이콘 위치 텍스트 옆에서 나오도록 수정) */
 .csmge_sumup .left strong.ico::after{content:'';position:absolute;right:0;top:50%;width:3.8rem;height:3.8rem;margin-top:-1.9rem;}
 .csmge_sumup .left .stats{display:block;position:relative;margin-top:.6rem;padding-left:2rem;}
 .csmge_sumup .left .stats.suc::before{content:'';display:inline-block;position:absolute;left:.5rem;top:50%;width:.8rem;height:.8rem;margin-top:-.3rem;background-color:#707070;border-radius:.4rem;}
@@ -492,6 +492,7 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .pg_rsinq .rsinq_summ .rsinq_list li .th strong{display:block;font-size:1.6rem;font-weight:400;line-height:2.8rem;}
 .pg_rsinq .rsinq_summ .rsinq_list li .td{width:60%;padding-right:.6rem;font-size:1.6rem;line-height:2.8rem;text-align:right;}
 .pg_rsinq .rsinq_summ .rsinq_list li .td .number{font-size:2rem;font-weight:700;}
+.pg_rsinq .rsinq_summ .rsinq_list li .td .number.point{color:#FF0000;} /* 210416 : ga korea 추가 (SGA_SB_05001 컬러값 수정) */
 .pg_rsinq .rsinq_summ .rsinq_list li.bottom{margin-top:2.5rem;padding:2.8rem 0 2rem;border-top:1px dashed #7f7f7f;}
 .pg_rsinq .rsinq_watch{margin-top:2rem;background-color:#fff;}
 .pg_rsinq .rsinq_watch .spo_tit2{margin-top:2rem;}
@@ -1070,7 +1071,7 @@ p.no_result .desc{display:block;margin-top:3rem;color:#707070;font-size:1.4rem;l
 .float_wrap .present_float .gift_prod{height:5.2rem;padding:.5rem 6rem 0 3rem;}
 .float_wrap .present_float .gift_prod .photo{position:absolute;right:.2rem;top:.2rem;width:4.8rem;height:4.8rem;border:0;border-radius:2.4rem;}
 .float_wrap .present_float .gift_prod .prod_txt{width:auto;min-height:1px;padding:0;}
-.float_wrap .present_float .gift_prod .prod_txt strong{margin-top:.3rem;color:#fff;font-size:1.4rem;font-weight:400;line-height:2rem;}
+.float_wrap .present_float .gift_prod .prod_txt strong{/* 210416 : ga korea 추가 말풍선 중앙정렬 margin-top:.3rem;*/color:#fff;font-size:1.4rem;font-weight:400;line-height:2rem;}
 .float_wrap .present_float .gift_prod .prod_txt strong ~ strong::before{content:'/';display:inline-block;}
 .float_wrap .present_float .float_close{position:absolute;right:-.7rem;top:-.4rem;width:2.4rem;height:2.4rem;}
 .float_wrap .present_float .float_close::before{content:'';position:absolute;left:50%;top:50%;width:2rem;height:2rem;margin:-1rem 0 0 -1rem;background-color:#E9290B;border-radius:1rem;}
