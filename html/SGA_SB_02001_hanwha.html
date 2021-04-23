@@ -1,0 +1,266 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <title>일정관리(SGA_SB_02001)</title>
+    <link href="" rel="shortcut icon" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/brand_hanhwa.css"><!-- 210122_ui변경_css추가 -->
+	<script type="text/javascript" src="../js/libs/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../js/libs/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/libs/datepicker.js"></script>
+</head>
+
+<body>
+
+<!-- skip -->
+<!-- <div id="skip">
+    <a href="#content">본문 바로가기</a>
+    <a href="#bottom_navmn">메뉴 바로가기</a>
+</div> -->
+
+<div id="wrap" class="bg_gray">
+		
+	<header class="header subm">
+		<h1 class="title">일정관리</h1>
+		<a href="#" class="go_notice on"><span class="blind">알림센터<span class="blind_txt">신규 알림 있음</span></span></a> <!-- 신규 push 가 있을 경우 .on 클래스 추가 -->
+	</header>
+
+	<section class="content">
+		<div class="conts_page pg_schedule">
+      <h2 class="blind">달력(calendar)</h2>
+      <div class="schedule_cal_wrap">
+        <div class="schedule_cal">
+          <!-- 210423 : 일정관리 화면 수정 -->
+          <!--button type="button" class="btn_sync"><span class="blind">달력(calendar) 동기화</span></!--button-->
+          <div class="filter">
+            <ul class="radio_list">
+              <li>
+                <div class="radio bgcolor check color01">
+                    <input type="radio" id="filter_rad01" name="n_radio" checked="">
+                    <label for="filter_rad01">개인</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio bgcolor color02">
+                    <input type="radio" id="filter_rad02" name="n_radio">
+                    <label for="filter_rad02">기관</label>
+                </div>
+              </li>
+              <li>
+                <div class="radio bgcolor color03">
+                    <input type="radio" id="filter_rad03" name="n_radio">
+                    <label for="filter_rad03">전사</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- //210423 : 일정관리 화면 수정 -->
+
+          <!-- 날짜선택 -->
+          <div class="date_select">
+              <input type="text" class="form-control" data-toggle="datepicker" title="날짜 선택" readonly> <!-- 210204_수정(readonly 추가) -->
+          </div>
+
+          <!-- calendar -->
+          <div class="calendar">
+            <table>
+              <caption>달력(calendar) 선택</caption>
+              <thead>
+                <tr>
+                    <th scope="col" class="sun"><span class="day">일</span></th>
+                    <th scope="col"><span class="day">월</span></th>
+                    <th scope="col"><span class="day">화</span></th>
+                    <th scope="col"><span class="day">수</span></th>
+                    <th scope="col"><span class="day">목</span></th>
+                    <th scope="col"><span class="day">금</span></th>
+                    <th scope="col" class="sat"><span class="day">토</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td class="sun disable"><span class="day">29</span></td>
+                    <td class="disable"><span class="day">30</span></td>
+                    <td><button type="button" class="day">1</button></td>
+                    <td><button type="button" class="day">2</button></td>
+                    <td><button type="button" class="day">3</button></td>
+                    <td><button type="button" class="day">4</button></td>
+                    <td class="saturday"><button type="button" class="day">5</button></td>
+                </tr>
+                <tr>
+                    <td class="sun"><button type="button" class="day">6</button></td>
+                    <td><button type="button" class="day">7</button></td>
+                    <td><button type="button" class="day">8</button></td>
+                    <td><button type="button" class="day">9</button></td>
+                    <td><button type="button" class="day">10</button></td>
+                    <td><button type="button" class="day">11</button></td>
+                    <td class="saturday"><button type="button" class="day">12</button></td>
+                </tr>
+                <tr>
+                    <td class="sun"><button type="button" class="day">13</button></td>
+                    <td class="add active"><button type="button" class="day">14</button><span class="blind">일정 있음</span></td>
+                    <td><button type="button" class="day">15</button></td>
+                    <td class="add"><button type="button" class="day">16</button></td>
+                    <td class="add"><button type="button" class="day">17</button></td>
+                    <td><button type="button" class="day">18</button></td>
+                    <td class="saturday"><button type="button" class="day">19</button></td>
+                </tr>
+                <tr>
+                    <td class="sun"><button type="button" class="day">20</button></td>
+                    <td><button type="button" class="day">21</button></td>
+                    <td class="today"><button type="button" class="day">22</button></td>
+                    <td><button type="button" class="day">23</button></td>
+                    <td><button type="button" class="day">24</button></td>
+                    <td class="add holiday"><button type="button">25</button></td>
+                    <td class="add saturday"><button type="button" class="day">26</button></td>
+                </tr>
+                <tr>
+                    <td class="add sun"><button type="button" class="day">27</button></td>
+                    <td><button type="button" class="day">28</button></td>
+                    <td><button type="button" class="day">29</button></td>
+                    <td><button type="button" class="day">30</button></td>
+                    <td><button type="button" class="day">31</button></td>
+                    <td class="disable"><span class="day">1</span></td>
+                    <td class="saturday disable"><span class="day">2</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- 일정 목록 -->
+      <div class="schedule_det">
+          <h2 class="blind">선택된 날짜 등록된 일정 목록</h2>
+
+          <strong class="spo_tit2 ls0">2020.12.28</strong>
+
+          <!-- 등록된 일정이 없을 경우 노출 -->
+          <p class="no_result">일정이 없습니다.</p>
+          <!-- //등록된 일정이 없을 경우 노출 -->
+
+          <!-- list -->
+          <div class="schedule_list">
+            <!-- loop -->
+            <div class="box">
+              <div class="period">
+                <span class="start">2020.12.14 에서</span>
+                <span class="end">2020.12.19 까지</span>
+              </div>
+              <span class="type color01">개인</span><!-- 210423 : 일정관리 화면 수정 -->           
+              <strong class="tt">지점 워크샵</strong>
+              <p class="txt_det">강남 파이넨셜 타워 워크샵</p>
+
+              <button type="button" aria-haspopup="true" data-target="#lay_delete" class="btn_del js_btnlayerpop"><span class="blind">일정 삭제</span></button>
+            </div>
+            <!-- //loop -->
+            <div class="box">
+              <div class="period">
+                <span class="start">2020.12.14</span>
+                <span class="end">2020.12.14</span>
+              </div>
+              <span class="type color02">기관</span><!-- 210423 : 일정관리 화면 수정 -->      
+              <strong class="tt">고객 생일</strong>
+              <p class="txt_det">장예린 (가망고객) 생일</p>
+
+              <button type="button" class="btn_del"><span class="blind">일정 삭제</span></button>
+            </div>
+            <div class="box"> <!-- google, Naver 동기화일정 -->
+              <div class="period">
+                <span class="start">2020.12.14</span>
+                <span class="end">2020.12.14</span>
+              </div>
+              <span class="type color03">전사</span><!-- 210423 : 일정관리 화면 수정 -->
+              <strong class="tt site">Google</strong>
+              <p class="txt_det">Arin Choi님 생일</p>
+            </div>
+            <div class="box"> <!-- google, Naver 동기화일정 -->
+              <div class="period">
+                <span class="start">2020.12.14</span>
+                <span class="end">2020.12.14</span>
+              </div>
+              <strong class="tt site">Naver</strong>
+              <p class="txt_det">오후 4:00 홍길동 (가망) 경희궁 1길</p>
+            </div>
+            <div class="box">
+              <div class="period">
+                <span class="start">2020.12.14</span>
+                <span class="end">2020.12.14</span>
+              </div>
+              <strong class="tt">고객 생일</strong>
+              <p class="txt_det">장예린 (가망고객) 생일</p>
+              <button type="button" class="btn_del"><span class="blind">일정 삭제</span></button>
+            </div>
+          </div>
+      </div>
+
+      <!-- 일정등록 button -->
+      <div class="float_wrap">
+          <button type="button" class="float_add"><span class="blind">일정등록 추가</span></button>
+      </div>
+		</div>
+	</section>
+
+	<!-- bottom fix menu -->
+	<nav class="bottom_navmn">
+		<div class="conts">
+			<a href="#" class="nv_home"><span class="blind">홈</span></a> <!-- 선택된 페이지 .on 클래스 추가 -->
+			<a href="#" class="nv_cal on"><span class="blind">일정관리</span></a>
+			<a href="#" class="nv_cs"><span class="blind">고객관리</span></a>
+			<a href="#" class="nv_more"><span class="blind">더 보기</span></a>
+		</div>
+	</nav>
+
+</div>
+
+<!-- layer popup -->
+<section class="layerpop_wrap alertpop" id="lay_delete" role="dialog">
+    <div class="inr">
+        <div class="layerpop_contents">
+            <div class="layerpop_conts">
+                <header class="layerpop_header">
+                    <h1 class="tit">알림</h1>
+                </header>
+                <div class="layerpop_body">
+                    <p>입력하신 내용과 일치하는<br>사용자 정보가 없습니다.<br>사용자 정보를 다시 확인해주세요.</p>
+                </div>
+                <div class="layerpop_foot">
+                    <button type="button" class="btn_pop_alert gray js_close"><span>취소</span></button>
+                    <button type="button" class="btn_pop_alert js_lidel"><span>확인</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //layer popup -->
+
+
+<script type="text/javascript" src="../js/common-ui.js"></script>
+<script type="text/javascript">
+$(function() {
+    // 삭제하기 팝업, 삭제 클릭 시 콜백함수 호출
+    $('#lay_delete').on('click', '.layerpop_foot .btn_pop_alert:nth-of-type(2)', function() { 
+        alert('삭제');
+
+        $(this).parents('.layerpop_wrap').trigger('closePopup');
+
+        return false; 
+    });
+
+    $('[data-toggle="datepicker"]').datepicker(); // 210127 수정
+  
+});
+</script>  
+</body>
+</html>

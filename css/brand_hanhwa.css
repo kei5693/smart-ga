@@ -143,5 +143,56 @@ div.no_result::after{background-position:-6rem -22rem;}
 /* 210413 : 에러페이지 추가 */
 .error_page {padding-top: 16.32vh;}
 .error_page > .inner .title strong {color:#F37321;}
-.error_page > .inner:after   {background-position: -100rem -30rem;}
+.error_page > .inner:after {background-position: -100rem -30rem;}
 /* //210413 : 에러페이지 추가 */
+
+/* 210423 : 일정관리 화면 수정 */
+.pg_schedule .schedule_det .schedule_list .box .type {
+  display:inline-block;
+  width:4rem;
+  height:2rem;
+  line-height: 2rem;
+  margin-right:0.4rem;
+  color:#fff;
+  border-radius: 0.8rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.pg_schedule .schedule_det .schedule_list .box .type.color01,
+.radio.bgcolor.check.color01 label {
+  background-color: #E18C56;
+}
+.pg_schedule .schedule_det .schedule_list .box .type.color02,
+.radio.bgcolor.check.color02 label {
+  background-color: #D59BBA;
+}
+.pg_schedule .schedule_det .schedule_list .box .type.color03,
+.radio.bgcolor.check.color03 label {
+  background-color: #E27C71;
+}
+.pg_schedule .schedule_cal .filter {
+  position: absolute;
+  top:9rem;
+  right:1.8rem;
+}
+.conts_page.pg_schedule_reg.bgcolor .form_list {
+  background: #fff;
+  margin: 0 -2.2rem;
+  padding: 0 2.2rem;
+}
+.conts_page.pg_schedule_reg.bgcolor .form_list.bottom {
+  padding-top:2rem;
+}
+.conts_page.pg_schedule_reg.bgcolor .form_list.bottom,
+.conts_page.pg_schedule_reg.bgcolor .form_list.bottom * {
+  background-color: #F1F0EC;
+}
+.conts_page.pg_schedule_reg.bgcolor .form_list.bottom .input_title {
+  margin-top:0;
+}
+.conts_page.pg_schedule_reg .filter {
+  display:flex;
+  height:8.4rem;
+  align-items: center;
+}
+/* //210423 : 일정관리 화면 수정 */
